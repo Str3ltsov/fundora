@@ -13,8 +13,8 @@
 
     <!-- Styles / Scripts -->
     @if (config('app.env') == 'production' && file_exists(public_path('build/manifest.json')))
-        <link href="{{ public_path('build/assets/app-CeaRPtlx.css') }}" rel="preconnect">
-        <script src="{{ public_path('build/assets/app-eMHK6VFw.js') }}"></script>
+        <link href="{{ asset('build/assets/app-CeaRPtlx.css') }}" rel="preconnect">
+        <script src="{{ asset('build/assets/app-eMHK6VFw.js') }}"></script>
     @else
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     @endif
@@ -24,6 +24,7 @@
 </head>
 
 <body>
+    @include('layouts.partials.header')
     @yield('content')
     @include('layouts.partials.footer')
 </body>
