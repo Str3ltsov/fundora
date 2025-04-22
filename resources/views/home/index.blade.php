@@ -1,11 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
-    <main class="min-h-100 pt-16">
+    <main class="min-h-100">
         <section class="hero"
             style="background-image: url('../images/home_background.jpg'); background-repeat: no-repeat; background-size: cover; background-blend-mode: darken;">
-            <div class="min-h-100 flex items-center max-w-screen-md mx-auto px-5">
-                <div class="hero-content text-white flex flex-col gap-4 max-w-lg">
+            <div class="flex items-center max-w-screen-md mx-auto px-5 pt-46 pb-30">
+                <div class="hero-content text-white flex flex-col gap-6 max-w-lg">
                     <h1 class="font-medium text-5xl leading-14">Trusted Global Property Investments</h1>
                     <p class="text-lg">Connecting you to premium real estate opportunities across Europe, Asia, and the
                         Americas.</p>
