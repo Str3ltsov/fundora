@@ -23,7 +23,7 @@
     @stack('scripts')
 </head>
 
-<body>
+<body class="min-h-screem min-w-100 bg-primary-color">
     @include('layouts.partials.header')
     @yield('content')
     @include('layouts.partials.footer')
