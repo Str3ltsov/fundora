@@ -5,7 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>{{ config('app.name') }}</title>
+    @hasSection('pageTitle')
+        <title>@yield('pageTitle') - {{ config('app.name') }}</title>
+    @else
+        <title>{{ config('app.name') }}</title>
+    @endif
 
     <link rel="icon" href="{{ asset('images/logo.jpg') }}">
 
@@ -25,7 +29,7 @@
     @stack('scripts')
 </head>
 
-<body class="min-h-screen min-w-100 bg-primary-color">
+<body class="min-h-screen min-w-100 bg-secondary-color pt-20">
     @include('layouts.partials.header')
     @yield('content')
     @include('layouts.partials.footer')

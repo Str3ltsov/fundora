@@ -54,7 +54,7 @@
                 class="absolute inset-y-0 right-0 md:flex hidden items-center pr-2 md:static md:inset-auto md:ml-6 md:pr-0">
                 <button type="button"
                     class="bg-button-color hover:bg-secondary-color hover:border-1 text-white h-11 w-fit">
-                    <a href="javascript:void(0)" class="flex text-md px-6 py-2">
+                    <a href="{{ route('book-consulation.index') }}" class="flex text-md px-6 py-2">
                         {{ __('Book a Consulation') }}
                     </a>
                 </button>
@@ -87,7 +87,7 @@
             </a>
             <button type="button"
                 class="bg-button-color hover:bg-secondary-color hover:border-1 text-white h-11 w-fit my-4 ms-3">
-                <a href="javascript:void(0)" class="flex text-md px-6 py-2">
+                <a href="{{ route('book-consulation.index') }}" class="flex text-md px-6 py-2">
                     {{ __('Book a Consulation') }}
                 </a>
             </button>

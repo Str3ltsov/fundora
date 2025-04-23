@@ -5,7 +5,7 @@
         <section class="hero"
             style="background-image: url('../images/home_background.jpg'); background-repeat: no-repeat;
                    background-size: cover; background-position: center; background-color: #444; background-blend-mode: overlay;">
-            <div class="flex items-center max-w-screen-lg mx-auto px-5 pt-50 pb-30">
+            <div class="flex items-center max-w-screen-lg mx-auto px-5 py-30">
                 <div class="hero-content text-white flex flex-col gap-6 max-w-lg">
                     <h1 class="font-medium text-5xl leading-14">Trusted Global Property Investments</h1>
                     <p class="text-lg">Connecting you to premium real estate opportunities across Europe, Asia, and the
