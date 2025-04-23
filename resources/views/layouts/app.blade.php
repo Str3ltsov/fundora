@@ -13,7 +13,7 @@
 
     <!-- Styles / Scripts -->
     @if (config('app.env') == 'production' && is_file('build/manifest.json'))
-        <link href="{{ asset('build/assets/app-Zqn_ncPD.css') }}" rel="stylesheet">
+        <link href="{{ asset('build/assets/app-1KZ8KtoZ.css') }}" rel="stylesheet">
         <script src="{{ asset('build/assets/app-eMHK6VFw.js') }}"></script>
     @else
         @vite(['resources/css/app.css', 'resources/js/app.js'])
