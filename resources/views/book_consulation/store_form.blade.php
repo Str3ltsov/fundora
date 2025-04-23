@@ -1,4 +1,4 @@
-<form class="mx-auto flex flex-col gap-5" method="POST" action="{{ route('book-consulation.store') }}">
+<form class="mx-auto flex flex-col gap-5" method="POST" action="{{ route('book-consultation.store') }}">
     @csrf
     @method('POST')
     <div>

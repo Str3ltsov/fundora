@@ -45,7 +45,7 @@
                 <p class="max-w-100">
                     {{ __('Get personalized guidance and discover the best international real estate opportunities.') }}</p>
                 <button type="button" class="bg-button-color h-12 w-fit hover:bg-secondary-color hover:border-1">
-                    <a href="javascript:void(0)" class="py-4 px-6">{{ __('Book a Consultation') }}</a>
+                    <a href="{{ route('book-consultation.index') }}" class="py-4 px-6">{{ __('Book a Consultation') }}</a>
                 </button>
             </div>
         </section>
