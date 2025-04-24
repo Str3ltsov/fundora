@@ -11,5 +11,5 @@ Route::get("/home", fn() => redirect(route("home")));
 Route::resource("book-consultation", BookConsultationController::class)
     ->only(["index", "store"]);
 
-Route::get('/language/{locale}', [LanguageController::class, 'change'])
+Route::get('/language/{locale?}', [LanguageController::class, 'change'])
     ->name('changeLanguage');

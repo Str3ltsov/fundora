@@ -8,7 +8,7 @@ use Symfony\Component\HttpKernel\Exception\HttpException;
 
 class LanguageController extends Controller
 {
-    public function change(string $locale): RedirectResponse
+    public function change(string|null $locale): RedirectResponse
     {
         try {
             if (!in_array($locale, config('app.available_locales'))) {

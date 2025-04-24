@@ -52,9 +52,15 @@
                 </div>
             </div>
             <div
-                class="absolute inset-y-0 right-0 md:flex hidden items-center pr-2 md:static md:inset-auto md:ml-6 md:pr-0">
+                class="absolute inset-y-0 right-0 flex items-center pr-2 md:static md:inset-auto md:ml-6 md:pr-0 gap-4">
+                <select id="languages" class="bg-transparent text-white h-11">
+                    <option selected>{{ strtoupper(app()->currentLocale()) }}</option>
+                    @foreach (config('app.available_locales') as $locale)
+                        <option value="{{ $locale }}">{{ strtoupper($locale) }}</option>
+                    @endforeach
+                </select>
                 <button type="button"
-                    class="bg-button-color hover:bg-secondary-color hover:border-1 text-white h-11 w-fit">
+                    class="md:block hidden bg-button-color hover:bg-secondary-color hover:border-1 text-white h-11 w-fit">
                     <a href="{{ route('book-consultation.index') }}" class="flex text-md px-6 py-2">
                         {{ __('pages.bookConsultation') }}
                     </a>
@@ -124,5 +130,16 @@
         }
     }
 
+    const changeLanguage = () => {
+        const languages = document.getElementById('languages')
+
+        languages.addEventListener('change', () => {
+            const locale = languages.value.toLowerCase();
+            const route = '{{ route('changeLanguage') }}/'.concat(locale)
+            window.location.replace(route)
+        })
+    }
+
     toggleMenu()
+    changeLanguage()
 </script>
