@@ -3,9 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreConsultationRequest;
+use App\Mail\ConsultationSubmitted;
 use App\Models\Consultation;
 use Illuminate\Contracts\View\View;
 use Illuminate\Http\RedirectResponse;
+use Illuminate\Support\Facades\Mail;
 
 class BookConsultationController extends Controller
 {
@@ -18,7 +20,10 @@ class BookConsultationController extends Controller
     {
         try {
             $consultationInput = $request->validated();
-            Consultation::firstOrCreate($consultationInput);
+            $consultation = Consultation::create($consultationInput);
+
+            Mail::to('info@fundoraglobal.com')
+                ->send(new ConsultationSubmitted($consultation));
 
             return redirect(route('book-consultation.index'))
                 ->with('success', __('Successfully submitted your consultation.'));
