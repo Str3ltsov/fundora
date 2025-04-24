@@ -4,9 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description"
-        content="{{ __('Fundora yra tarptautinė nekilnojamojo turto investicijų tarpininkavimo įmonės prekės ženklas,
-                                                                    kuri sujungia investuotojus su aukštos kokybės turto galimybėmis visame pasaulyje.') }}">
+    <meta name="description" content="{{ __('texts.websiteDescription') }}">
     <meta name="keywords" content="fundora, fundora global, fundoraglobal">
 
     @hasSection('pageTitle')
@@ -15,7 +13,7 @@
         <title>{{ config('app.name') }}</title>
     @endif
 
-    <link rel="icon" href="{{ asset('images/logo.jpg') }}">
+    <link rel="icon" href="{{ asset('images/logo1.jpg') }}">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">

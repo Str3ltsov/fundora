@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('pageTitle', 'Book a Consultation')
+@section('pageTitle', __('pages.bookConsultation'))
 
 @section('content')
     <main class="min-h-100">
@@ -10,18 +10,18 @@
                     <section class="w-100">
                         <div class="flex flex-col gap-6">
                             <h1 class="font-medium text-3xl text-white">
-                                {{ __('Book a Consultation') }}
+                                {{ __('pages.bookConsultation') }}
                             </h1>
                             <p class="text-white">
-                                {{ __('Looking for investment opportunities? Let us help you take the first step.') }}
+                                {{ __('texts.bookConsultationFirstParagraph') }}
                             </p>
                             <p class="text-white">
-                                {{ __('Our team is ready to answer all your questions – from the first consultation to acquisition or management support.') }}
+                                {{ __('texts.bookConsultationSecondParagraph') }}
                             </p>
                             <div class="flex items-center gap-4 text-white">
                                 <x-grommet-mail-option class="size-8" />
                                 <div>
-                                    <h2 class="font-medium">{{ __('Email') }}</h2>
+                                    <h2 class="font-medium">{{ __('texts.bookConsultationEmail') }}</h2>
                                     <a href="mailto:info@fundoraglobal.com" class="opacity-75 hover:opacity-50">
                                         {{ __('info@fundoraglobal.com') }}
                                     </a>
@@ -30,7 +30,7 @@
                             <div class="flex items-center gap-4 text-white">
                                 <x-heroicon-o-phone class="size-8" />
                                 <div>
-                                    <h2 class="font-medium">{{ __('Phone (WhatsApp, Telegram)') }}</h2>
+                                    <h2 class="font-medium">{{ __('texts.bookConsultationPhone') }}</h2>
                                     <a href="tel:+37061572799" class="opacity-75 hover:opacity-50">
                                         {{ __('+370 615 82 799') }}
                                     </a>

@@ -26,7 +26,7 @@ class BookConsultationController extends Controller
                 ->send(new ConsultationSubmitted($consultation));
 
             return redirect(route('book-consultation.index'))
-                ->with('success', __('Successfully submitted your consultation.'));
+                ->with('success', __('messages.successConsultationSubmit'));
         } catch (\Exception $e) {
             return back()
                 ->with('error', $e->getMessage());
