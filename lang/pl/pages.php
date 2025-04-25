@@ -5,7 +5,7 @@ return [
     'home' => 'Strona główna',
     'aboutUs' => 'O nas',
     'services' => 'Usługi',
-    'faq' => 'FAQ',
+    'faq' => 'CZP',
     'cases' => 'Przypadki',
     'bookConsultation' => 'Zarezerwuj konsultację'
 

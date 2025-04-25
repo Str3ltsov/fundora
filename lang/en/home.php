@@ -11,9 +11,9 @@ return [
     'whyFundoraSecondCardTitle' => 'Global Reach',
     'whyFundoraSecondCardDesc' => 'Opportunities across Europe, Asia, and the Americas.',
     'whyFundoraThirdCardTitle' => 'Sustainable Growth',
-    'whyFundoraThirdCardDesc' => 'Long-term strategies for stable returns and value appreciation.',
+    'whyFundoraThirdCardDesc' => 'Long-Term Value Growth Strategies.',
     'readyToInvestGloballyTitle' => 'Ready to Invest Globally?',
-    'readyToInvestGloballyDesc' => 'Get personalized guidance and discover the best international real estate opportunities.',
+    'readyToInvestGloballyDesc' => 'Get personalized advice and discover the best international real estate opportunities.',
     'readyToInvestGloballyButton' => 'Book a Consultation'
 
 ];

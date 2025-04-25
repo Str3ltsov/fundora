@@ -9,7 +9,7 @@
                 <div class="hero-content text-white flex flex-col gap-6 max-w-lg">
                     <h1 class="font-medium text-5xl leading-14">{{ __('home.heroTitle') }}</h1>
                     <p class="text-lg">{{ __('home.heroDescription') }}</p>
-                    <button type="button" class="bg-button-color h-13 w-fit hover:bg-secondary-color hover:border-1">
+                    <button type="button" class="button bg-button-color h-13 w-fit hover:bg-secondary-color">
                         <a href="javascript:void(0)" class="py-4 px-6">{{ __('home.heroButton') }}</a>
                     </button>
                 </div>
@@ -43,7 +43,7 @@
                 <p class="max-w-100">
                     {{ __('home.readyToInvestGloballyDesc') }}
                 </p>
-                <button type="button" class="bg-button-color h-12 w-fit hover:bg-secondary-color hover:border-1">
+                <button type="button" class="button bg-button-color h-12 w-fit hover:bg-secondary-color">
                     <a href="{{ route('book-consultation.index') }}" class="py-4 px-6">
                         {{ __('home.readyToInvestGloballyButton') }}
                     </a>

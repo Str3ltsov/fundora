@@ -7,13 +7,13 @@ return [
     'heroButton' => 'Naršyti investavimo galimybes',
     'whyFundoraTitle' => 'Kodėl Fundora',
     'whyFundoraFirstCardTitle' => 'Pasitikėjimas ir patirtis',
-    'whyFundoraFirstCardDesc' => 'Sertifikuoti ekspertai, turintys daugiau nei 10 metų tarptautinio investavimo patirtį.',
+    'whyFundoraFirstCardDesc' => 'Ekspertai, turintys daugiau nei 10 metų tarptautinio investavimo patirtį. ',
     'whyFundoraSecondCardTitle' => 'Pasaulinis pasiekiamumas',
-    'whyFundoraSecondCardDesc' => 'Galimybės visoje Europoje, Azijoje ir Amerikoje.',
+    'whyFundoraSecondCardDesc' => 'Galimybės Europoje ir Azijoje.',
     'whyFundoraThirdCardTitle' => 'Tvarus augimas',
     'whyFundoraThirdCardDesc' => 'Ilgalaikės stabilios grąžos ir vertės padidėjimo strategijos.',
     'readyToInvestGloballyTitle' => 'Pasiruošę investuoti visame pasaulyje?',
-    'readyToInvestGloballyDesc' => 'Gaukite asmenines rekomendacijas ir atraskite geriausias tarptautines nekilnojamojo turto galimybes.',
+    'readyToInvestGloballyDesc' => 'Gaukite asmeninių patarimų ir atraskite geriausias tarptautines nekilnojamojo turto galimybes.',
     'readyToInvestGloballyButton' => 'Užsisakyti konsultaciją'
 
 ];

@@ -32,7 +32,7 @@
         @enderror
     </div>
     <button type="submit"
-        class="bg-button-color hover:bg-secondary-color hover:border-1 text-white font-medium text-md w-fit px-6 py-4 text-center mt-5">
+        class="button bg-button-color hover:bg-secondary-color text-white font-medium text-md w-fit px-6 py-4 text-center mt-5 cursor-pointer">
         {{ __('forms.submit') }}
     </button>
 </form>

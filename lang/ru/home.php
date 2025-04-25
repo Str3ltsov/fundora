@@ -7,13 +7,13 @@ return [
     'heroButton' => 'Изучите инвестиционные возможности',
     'whyFundoraTitle' => 'Почему Fundora',
     'whyFundoraFirstCardTitle' => 'Доверие и опыт',
-    'whyFundoraFirstCardDesc' => 'Сертифицированные эксперты с более чем 10-летним опытом международных инвестиций.',
-    'whyFundoraSecondCardTitle' => 'Глобальный охват',
+    'whyFundoraFirstCardDesc' => 'Эксперты с более чем 10-летним опытом международных инвестиций.',
+    'whyFundoraSecondCardTitle' => 'Глобальное присутствие',
     'whyFundoraSecondCardDesc' => 'Возможности в Европе, Азии и Америке.',
     'whyFundoraThirdCardTitle' => 'Устойчивый рост',
-    'whyFundoraThirdCardDesc' => 'Долгосрочные стратегии для стабильной прибыли и повышения стоимости.',
-    'readyToInvestGloballyTitle' => 'Готовы инвестировать глобально?',
-    'readyToInvestGloballyDesc' => 'Получите персонализированные рекомендации и откройте для себя лучшие возможности в сфере международной недвижимости.',
+    'whyFundoraThirdCardDesc' => 'Стратегии стабильного роста и увеличения стоимости.',
+    'readyToInvestGloballyTitle' => 'Готовы инвестировать по всему миру?',
+    'readyToInvestGloballyDesc' => 'Получите персональные рекомендации и откройте лучшие международные возможности.',
     'readyToInvestGloballyButton' => 'Заказать консультацию'
 
 ];

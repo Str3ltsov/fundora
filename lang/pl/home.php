@@ -7,13 +7,13 @@ return [
     'heroButton' => 'Odkryj możliwości inwestycyjne',
     'whyFundoraTitle' => 'Dlaczego Fundora',
     'whyFundoraFirstCardTitle' => 'Zaufanie i doświadczenie',
-    'whyFundoraFirstCardDesc' => 'Certyfikowani eksperci z ponad 10-letnim doświadczeniem w międzynarodowych inwestycjach.',
+    'whyFundoraFirstCardDesc' => 'Eksperci z ponad 10-letnim doświadczeniem w inwestycjach międzynarodowych.',
     'whyFundoraSecondCardTitle' => 'Globalny zasięg',
-    'whyFundoraSecondCardDesc' => 'Możliwości w Europie, Azji i obu Amerykach.',
+    'whyFundoraSecondCardDesc' => 'Możliwości w Europie i Azji.',
     'whyFundoraThirdCardTitle' => 'Zrównoważony wzrost',
-    'whyFundoraThirdCardDesc' => 'Długoterminowe strategie na rzecz stabilnych zwrotów i wzrostu wartości.',
-    'readyToInvestGloballyTitle' => 'Gotowy na globalne inwestycje?',
-    'readyToInvestGloballyDesc' => 'Uzyskaj spersonalizowane wskazówki i odkryj najlepsze międzynarodowe okazje na rynku nieruchomości.',
+    'whyFundoraThirdCardDesc' => 'Strategie długoterminowego wzrostu i stabilnego zwrotu',
+    'readyToInvestGloballyTitle' => 'Gotowy na inwestycje na całym świecie?',
+    'readyToInvestGloballyDesc' => 'Skorzystaj z indywidualnych porad i odkryj najlepsze międzynarodowe oferty nieruchomości.',
     'readyToInvestGloballyButton' => 'Zarezerwuj konsultację'
 
 ];

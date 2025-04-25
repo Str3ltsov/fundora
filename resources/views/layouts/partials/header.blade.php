@@ -32,22 +32,22 @@
                             class="@if (request()->is('/')) underline @endif flex items-center px-4 py-3 text-md font-medium text-white hover:bg-primary-color"
                             aria-current="page">{{ __('pages.home') }}
                         </a>
-                        <a href="javascript:void(0)"
-                            class="@if (request()->is('/about-us')) underline @endif flex items-center px-4 py-3 text-md font-medium text-white hover:bg-primary-color">
+                        <a href="{{ route('aboutUs') }}"
+                            class="@if (request()->is('about-us')) underline @endif flex items-center px-4 py-3 text-md font-medium text-white hover:bg-primary-color">
                             {{ __('pages.aboutUs') }}
                         </a>
-                        <a href="javascript:void(0)"
-                            class="@if (request()->is('/services')) underline @endif flex items-center px-4 py-3 text-md font-medium text-white hover:bg-primary-color">
+                        <a href="{{ route('services') }}"
+                            class="@if (request()->is('services')) underline @endif flex items-center px-4 py-3 text-md font-medium text-white hover:bg-primary-color">
                             {{ __('pages.services') }}
                         </a>
-                        <a href="javascript:void(0)"
-                            class="@if (request()->is('/faq')) underline @endif flex items-center px-4 py-3 text-md font-medium text-white hover:bg-primary-color">
+                        <a href="{{ route('faq') }}"
+                            class="@if (request()->is('faq')) underline @endif flex items-center px-4 py-3 text-md font-medium text-white hover:bg-primary-color">
                             {{ __('pages.faq') }}
                         </a>
-                        <a href="javascript:void(0)"
-                            class="@if (request()->is('/cases')) underline @endif flex items-center px-4 py-3 text-md font-medium text-white hover:bg-primary-color">
+                        {{-- <a href="javascript:void(0)"
+                            class="@if (request()->is('cases')) underline @endif flex items-center px-4 py-3 text-md font-medium text-white hover:bg-primary-color">
                             {{ __('pages.cases') }}
-                        </a>
+                        </a> --}}
                     </div>
                 </div>
             </div>
@@ -56,11 +56,13 @@
                 <select id="languages" class="bg-transparent text-white h-11">
                     <option selected>{{ strtoupper(app()->currentLocale()) }}</option>
                     @foreach (config('app.available_locales') as $locale)
-                        <option value="{{ $locale }}">{{ strtoupper($locale) }}</option>
+                        @if ($locale !== app()->currentLocale())
+                            <option value="{{ $locale }}">{{ strtoupper($locale) }}</option>
+                        @endif
                     @endforeach
                 </select>
                 <button type="button"
-                    class="md:block hidden bg-button-color hover:bg-secondary-color hover:border-1 text-white h-11 w-fit">
+                    class="button md:block hidden bg-button-color hover:bg-secondary-color text-white h-11 w-fit">
                     <a href="{{ route('book-consultation.index') }}" class="flex text-md px-6 py-2">
                         {{ __('pages.bookConsultation') }}
                     </a>
@@ -76,24 +78,24 @@
                 aria-current="page">
                 {{ __('pages.home') }}
             </a>
-            <a href="javascript:void(0)"
-                class="block @if (request()->is('/about-us')) underline @endif px-3 py-2 text-base font-medium text-white hover:bg-primary-color">
+            <a href="{{ route('aboutUs') }}"
+                class="block @if (request()->is('about-us')) underline @endif px-3 py-2 text-base font-medium text-white hover:bg-primary-color">
                 {{ __('pages.aboutUs') }}
             </a>
-            <a href="javascript:void(0)"
-                class="block @if (request()->is('/services')) underline @endif px-3 py-2 text-base font-medium text-white hover:bg-primary-color">
+            <a href="{{ route('services') }}"
+                class="block @if (request()->is('services')) underline @endif px-3 py-2 text-base font-medium text-white hover:bg-primary-color">
                 {{ __('pages.services') }}
             </a>
-            <a href="javascript:void(0)"
-                class="block @if (request()->is('/faq')) underline @endif px-3 py-2 text-base font-medium text-white hover:bg-primary-color">
+            <a href="{{ route('faq') }}"
+                class="block @if (request()->is('faq')) underline @endif px-3 py-2 text-base font-medium text-white hover:bg-primary-color">
                 {{ __('pages.faq') }}
             </a>
-            <a href="javascript:void(0)"
-                class="block @if (request()->is('/cases')) underline @endif px-3 py-2 text-base font-medium text-white hover:bg-primary-color">
+            {{-- <a href="javascript:void(0)"
+                class="block @if (request()->is('cases')) underline @endif px-3 py-2 text-base font-medium text-white hover:bg-primary-color">
                 {{ __('pages.cases') }}
-            </a>
+            </a> --}}
             <button type="button"
-                class="bg-button-color hover:bg-secondary-color hover:border-1 text-white h-11 w-fit my-4 ms-3">
+                class="button bg-button-color hover:bg-secondary-color text-white h-11 w-fit my-4 ms-3">
                 <a href="{{ route('book-consultation.index') }}" class="flex text-md px-6 py-2">
                     {{ __('pages.bookConsultation') }}
                 </a>

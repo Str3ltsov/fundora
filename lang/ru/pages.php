@@ -5,7 +5,7 @@ return [
     'home' => 'Главная',
     'aboutUs' => 'О нас',
     'services' => 'Услуги',
-    'faq' => 'FAQ',
+    'faq' => 'ЧаВо',
     'cases' => 'Случаи',
     'bookConsultation' => 'Записаться на консультацию'
 
