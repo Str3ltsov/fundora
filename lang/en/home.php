@@ -7,7 +7,7 @@ return [
     'heroButton' => 'Explore Investment Opportunities',
     'whyFundoraTitle' => 'Why Fundora',
     'whyFundoraFirstCardTitle' => 'Trust & Experience',
-    'whyFundoraFirstCardDesc' => 'Certified experts with over 10 years of international investment experience.',
+    'whyFundoraFirstCardDesc' => 'Experienced experts with over 10 years of international investment experience.',
     'whyFundoraSecondCardTitle' => 'Global Reach',
     'whyFundoraSecondCardDesc' => 'Opportunities across Europe, Asia, and the Americas.',
     'whyFundoraThirdCardTitle' => 'Sustainable Growth',

@@ -18,7 +18,7 @@ return [
     'servicesThirdTitle' => '3. Transaction Intermediation',
     'servicesThirdDescription' => 'Every client receives a full service package – from negotiations and due diligence to documentation and legal advice.',
     'servicesFourthTitle' => '4. Post-Investment Support',
-    'servicesFourthDescription' => 'We help monitor returns and recommend actions to increase property value. We assist in finding property managers and tenants.',
+    'servicesFourthDescription' => 'We help monitor returns and recommend actions to increase property value. We assist in finding property managers.',
 
     'faqTitle' => 'FAQ',
     'faqFirstTitle' => '1. We haven’t heard about you. Can you share more info?',
