@@ -1,0 +1,12 @@
+<?php
+
+return [
+
+    'home' => 'Home',
+    'aboutUs' => 'About us',
+    'services' => 'Services',
+    'faq' => 'FAQ',
+    'cases' => 'Cases',
+    'bookConsultation' => 'Book a Consultation'
+
+];

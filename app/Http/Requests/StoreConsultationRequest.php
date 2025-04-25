@@ -33,17 +33,17 @@ class StoreConsultationRequest extends FormRequest
      *
      * @return array<string, string>
      */
-    public function messages(): array
-    {
-        return [
-            'name.required' => __('validations.nameRequired'),
-            'name.string' => __('validations.nameString'),
-            'name.max' => __('validations.nameMax'),
-            'phone_number.required' => __('validations.phoneNumberRequired'),
-            'phone_number.string' => __('validations.phoneNumberString'),
-            'phone_number.max' => __('validations.phoneNumberMax'),
-            'email.required' => __('validations.emailRequired'),
-            'email.email' => __('validations.emailEmail'),
-        ];
-    }
+    // public function messages(): array
+    // {
+    //     return [
+    //         'name.required' => __('validations.nameRequired'),
+    //         'name.string' => __('validations.nameString'),
+    //         'name.max' => __('validations.nameMax'),
+    //         'phone_number.required' => __('validations.phoneNumberRequired'),
+    //         'phone_number.string' => __('validations.phoneNumberString'),
+    //         'phone_number.max' => __('validations.phoneNumberMax'),
+    //         'email.required' => __('validations.emailRequired'),
+    //         'email.email' => __('validations.emailEmail'),
+    //     ];
+    // }
 }

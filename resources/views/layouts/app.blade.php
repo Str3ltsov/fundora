@@ -4,9 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description"
-        content="{{ __('Fundora yra tarptautinė nekilnojamojo turto investicijų tarpininkavimo įmonės prekės ženklas,
-                                                                    kuri sujungia investuotojus su aukštos kokybės turto galimybėmis visame pasaulyje.') }}">
+    <meta name="description" content="{{ __('texts.websiteDescription') }}">
     <meta name="keywords" content="fundora, fundora global, fundoraglobal">
 
     @hasSection('pageTitle')
@@ -15,7 +13,7 @@
         <title>{{ config('app.name') }}</title>
     @endif
 
-    <link rel="icon" href="{{ asset('images/logo.jpg') }}">
+    <link rel="icon" href="{{ asset('images/logo1.jpg') }}">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
@@ -23,7 +21,7 @@
 
     <!-- Styles / Scripts -->
     @if (config('app.env') == 'production' && is_file('build/manifest.json'))
-        <link href="{{ asset('build/assets/app-DTtrhu2n.css') }}" rel="stylesheet">
+        <link href="{{ asset('build/assets/app-DAy8L9RW.css') }}" rel="stylesheet">
         <script src="{{ asset('build/assets/app-eMHK6VFw.js') }}"></script>
     @else
         @vite(['resources/css/app.css', 'resources/js/app.js'])
