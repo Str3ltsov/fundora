@@ -12,6 +12,7 @@
 .phpactor.json
 .phpunit.result.cache
 .dockerignore
+.DS_Store
 docker-compose.yml
 Homestead.json
 Homestead.yaml
