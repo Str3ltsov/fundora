@@ -2,8 +2,6 @@
 
 return [
 
-    'websiteDescription' => 'Fundora yra tarptautinė nekilnojamojo turto investicijų tarpininkavimo įmonės prekės ženklas, kuri sujungia investuotojus su aukštos kokybės turto galimybėmis visame pasaulyje.',
-
     'aboutUsTitle' => 'Fundora – Global Real Estate Opportunities',
     'aboutUsFirstParagraph' => 'Fundora yra tarptautinė nekilnojamojo turto investicijų tarpininkavimo įmonės prekės ženklas, kuri sujungia investuotojus su aukštos kokybės turto galimybėmis visame pasaulyje. Mūsų misija – padėti klientams pasiekti tvarų vertės augimą per protingas investicijas į NT objektus Europoje (Ispanija, Šiaurės Kipras), Azijoje (Indonezija, Vietnamas, Kombodža).',
     'aboutUsSecondParagraph' => 'Turėdami platų tarptautinių partnerių tinklą ir gilų rinkų supratimą, mes siūlome ne tik objektus – mes siūlome sprendimus, kurie atitinka kliento strategiją, rizikos lygį ir ilgalaikius tikslus.',

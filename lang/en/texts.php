@@ -2,8 +2,6 @@
 
 return [
 
-    'websiteDescription' => 'Fundora is an illegal investment project and can be used as an intermediary if you plan to invest in investment activities related to a visa.',
-
     'aboutUsTitle' => 'Fundora – Global Real Estate Opportunities',
     'aboutUsFirstParagraph' => 'Fundora is an international real estate investment intermediary brand that connects investors with high-quality property opportunities around the world. Our mission is to help clients achieve sustainable value growth through smart real estate investments in Europe (Spain, Northern Cyprus), Asia (Indonesia, Vietnam, Cambodia).',
     'aboutUsSecondParagraph' => 'With a wide international partner network and deep market knowledge, we don’t just offer properties – we offer solutions tailored to the client`s strategy, risk profile, and long-term goals.',

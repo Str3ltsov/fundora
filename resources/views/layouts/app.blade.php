@@ -4,7 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="{{ __('texts.websiteDescription') }}">
+    <meta name="description"
+        content="{{ __('Fundora is an international real estate investment intermediary brand that connects investors with high-quality property opportunities around the world. Our mission is to help clients achieve sustainable value growth through smart real estate investments in Europe (Spain, Northern Cyprus), Asia (Indonesia, Vietnam, Cambodia).') }}">
     <meta name="keywords" content="fundora, fundora global, fundoraglobal">
 
     @hasSection('pageTitle')
