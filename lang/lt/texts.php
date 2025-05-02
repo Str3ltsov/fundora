@@ -36,6 +36,7 @@ return [
 
     'casesTitle' => 'Atvejai',
     'casesDescription' => '',
+    'casesChooseCountry' => 'Pasirinkite šalį',
     'casesEmpty' => 'Atvejų nerasta.',
 
     'bookConsultationFirstParagraph' => 'Ieškote investicinių galimybių? Mes padėsime žengti pirmą žingsnį.',

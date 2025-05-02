@@ -10,10 +10,10 @@
                         <x-zondicon-location class="size-6" />
                     </div>
                     <div class="flex flex-col">
-                        <a href="javascript:void(0)"
-                            class="w-fit font-medium text-md text-gray-100 hover:text-gray-400">
+                        <p id="country"
+                            class="w-fit font-medium text-md text-gray-100 hover:text-gray-400 cursor-pointer">
                             {{ $case->country->name ?? '-' }}
-                        </a>
+                        </p>
                         <p class="text-gray-300 text-sm">{{ $case->address }}</p>
                     </div>
                 </div>

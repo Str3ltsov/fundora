@@ -11,14 +11,14 @@
                     @if (__('texts.casesDescription') != '')
                         <p>{{ __('texts.casesDescription') }}</p>
                     @endif
-                    <form class="w-fit py-3 px-4 button bg-button-color hover:bg-secondary-color cursor-pointer">
-                        <select id="countries" class="border-0 outline-0 pr-2">
-                            <option selected>Choose a country</option>
+                    <div class="w-fit py-3 px-4 button bg-button-color hover:bg-secondary-color cursor-pointer">
+                        <select id="countrySelect" class="border-0 outline-0 pr-2 cursor-pointer">
+                            <option value="" selected>{{ __('texts.casesChooseCountry') }}</option>
                             @foreach ($countries as $country)
                                 <option value="{{ $country->name }}">{{ $country->name }}</option>
                             @endforeach
                         </select>
-                    </form>
+                    </div>
                 </div>
                 <div class="flex flex-col items-center gap-10">
                     @forelse ($cases as $case)
@@ -55,4 +55,41 @@
             }
         }
     </style>
+@endpush
+
+@push('scripts')
+    <script>
+        const filterCasesByCountry = () => {
+            const countrySelect = document.getElementById('countrySelect')
+            const countries = document.querySelectorAll('#country')
+
+            for (let i = 1; i < countrySelect.options.length; i++) {
+                const searchParams = new URLSearchParams(window.location.search)
+
+                if (!searchParams.has('country')) break
+
+                if (countrySelect.options[i].value === searchParams.get('country')) {
+                    countrySelect.options[i].selected = true
+                }
+            }
+
+            const redirectToFilteredUrl = countryName => {
+                const currentUrl = window.location.href.split('?')[0]
+                const filteredUrl = currentUrl.concat(`?country=${countryName}`)
+
+                window.location.replace(filteredUrl)
+            }
+
+            countrySelect.addEventListener(
+                'change', () => redirectToFilteredUrl(countrySelect.value)
+            )
+            countries.forEach(
+                country => country.addEventListener(
+                    'click', () => redirectToFilteredUrl(country.innerText)
+                )
+            )
+        }
+
+        filterCasesByCountry()
+    </script>
 @endpush

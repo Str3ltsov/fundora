@@ -29,7 +29,6 @@
     @endif
 
     @stack('styles')
-    @stack('scripts')
 </head>
 
 <body class="min-h-screen min-w-100 bg-secondary-color pt-20">
@@ -37,6 +36,8 @@
     @include('layouts.partials.session_messages')
     @yield('content')
     @include('layouts.partials.footer')
+
+    @stack('scripts')
 </body>
 
 </html>

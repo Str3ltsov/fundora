@@ -36,6 +36,7 @@ return [
 
     'casesTitle' => 'Кейсы',
     'casesDescription' => '',
+    'casesChooseCountry' => 'Выберите страну',
     'casesEmpty' => 'Не найдено ни одного случая',
 
     'bookConsultationFirstParagraph' => 'Ищете инвестиционные возможности? Мы поможем сделать первый шаг.',

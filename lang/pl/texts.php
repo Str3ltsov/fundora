@@ -36,6 +36,7 @@ return [
 
     'casesTitle' => 'Sprawy',
     'casesDescription' => '',
+    'casesChooseCountry' => 'Wybierz kraj',
     'casesEmpty' => 'Nie znaleziono żadnych przypadków',
 
     'bookConsultationFirstParagraph' => 'Szukasz okazji inwestycyjnych? Pozwól nam pomóc Ci zrobić pierwszy krok.',

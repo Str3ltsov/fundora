@@ -36,6 +36,7 @@ return [
 
     'casesTitle' => 'Cases',
     'casesDescription' => '',
+    'casesChooseCountry' => 'Choose a country',
     'casesEmpty' => 'No cases have been found.',
 
     'bookConsultationFirstParagraph' => 'Looking for investment opportunities? Let us help you take the first step.',
