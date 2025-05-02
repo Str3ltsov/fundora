@@ -14,6 +14,7 @@ Route::get("/home", fn() => redirect(route("home")));
 Route::get("/about-us", [AboutUsController::class, "index"])->name("aboutUs");
 Route::get("/services", [ServicesController::class, "index"])->name("services");
 Route::get("/faq", [FAQController::class, "index"])->name("faq");
+Route::get("/cases", [CasesController::class, "index"])->name("cases");
 Route::resource("book-consultation", BookConsultationController::class)
     ->only(["index", "store"]);
 

@@ -15,8 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('name', 100);
             $table->string('locale', 2);
-            $table->foreignId('country_id')
-                ->constrained('product_countries')
+            $table->foreignId('product_country_id')
+                ->constrained()
                 ->cascadeOnDelete();
         });
     }

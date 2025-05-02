@@ -45,16 +45,21 @@ class ProductCountrySeeder extends Seeder
      */
     public function run(): void
     {
-        foreach (config('app.available_locales') as $locale) {
-            foreach ($this->countryNames[$locale] as $countryName) {
-                $country = ProductCountry::create();
+        ProductCountry::factory()->count(5)->create();
 
+        foreach (config('app.available_locales') as $locale) {
+            static $countryId = 1;
+
+            foreach ($this->countryNames[$locale] as $countryName) {
                 DB::table('product_country_translations')->insert([
                     "name" => $countryName,
                     "locale" => $locale,
-                    "country_id" => $country->id
+                    "product_country_id" => $countryId
                 ]);
+                $countryId++;
             }
+
+            $countryId = 1;
         }
     }
 }

@@ -21,7 +21,7 @@ class ProductFactory extends Factory
             "address" => fake()->address(),
             "image" => "example.jpg",
             "is_visible" => fake()->boolean(100),
-            "country_id" => fake()->numberBetween(1, ProductCountry::count())
+            "product_country_id" => fake()->numberBetween(1, ProductCountry::count())
         ];
     }
 }

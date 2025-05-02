@@ -28,9 +28,9 @@ class ProductSeeder extends Seeder
 
                 DB::table('product_translations')->insert([
                     "name" => $locale . ": " . fake()->name(),
-                    "description" => $locale . ": " . fake()->text(rand(50, 100)),
+                    "description" => $locale . ": " . fake()->text(rand(200, 300)),
                     "price" => $this->prices[$locale],
-                    "main_advantages" => $locale . ": " . fake()->text(50),
+                    "main_advantages" => $locale . ": " . fake()->text(100),
                     "locale" => $locale,
                     "product_id" => $productId,
                     'created_at' => now(),

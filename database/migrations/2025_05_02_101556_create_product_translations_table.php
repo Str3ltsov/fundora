@@ -19,7 +19,7 @@ return new class extends Migration
             $table->text('main_advantages')->nullable();
             $table->string('locale', 2);
             $table->foreignId('product_id')
-                ->constrained('products')
+                ->constrained()
                 ->cascadeOnDelete();
             $table->timestamps();
         });

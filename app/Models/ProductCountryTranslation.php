@@ -10,13 +10,13 @@ class ProductCountryTranslation extends Model
     protected $fillable = [
         "name",
         "locale",
-        "country_id"
+        "product_country_id"
     ];
 
     protected $casts = [
         "name" => "string",
         "locale" => "string",
-        "country_id" => "integer"
+        "product_country_id" => "integer"
     ];
 
     public $timestamps = false;

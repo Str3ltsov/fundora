@@ -2,9 +2,9 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 
@@ -17,51 +17,38 @@ class Product extends Model
         "address",
         "image",
         "is_visible",
-        "country_id"
+        "product_country_id"
     ];
 
     protected $casts = [
         "address" => "string",
         "image" => 'string',
         "is_visible" => "boolean",
-        "country_id" => "integer"
+        "product_country_id" => "integer"
     ];
 
     protected $with = [
         "defaultTranslation"
     ];
 
-    private function newDefaultTranslationAttribute(string $attribute): Attribute
+    public function getNameAttribute(): string|null
     {
-        return new Attribute(get: fn() => $attribute);
+        return $this->defaultTranslation?->name;
     }
 
-    public function name(): Attribute
+    public function getDescriptionAttribute(): string|null
     {
-        return $this->newDefaultTranslationAttribute(
-            $this->defaultTranslation->title
-        );
+        return $this->defaultTranslation?->description;
     }
 
-    public function description(): Attribute
+    public function getPriceAttribute(): string|null
     {
-        return $this->newDefaultTranslationAttribute(
-            $this->defaultTranslation->description
-        );
+        return $this->defaultTranslation?->price;
     }
 
-    public function price(): Attribute
+    public function getMainAdvantagesAttribute(): string|null
     {
-        return $this->newDefaultTranslationAttribute(
-            $this->defaultTranslation->price
-        );
-    }
-
-    public function mainAdvantages(): Attribute
-    {
-        return $this->newDefaultTranslationAttribute(
-            $this->defaultTranslation->main_advantages
-        );
+        return $this->defaultTranslation?->main_advantages;
     }
 
     public function translations(): HasMany
@@ -71,18 +58,18 @@ class Product extends Model
 
     public function defaultTranslation(): HasOne
     {
-        return $this->translations()->one()->where(
+        return $this->hasOne(ProductTranslation::class)->where(
             'locale',
             app()->getLocale()
         );
     }
 
-    public function country(): HasOne
+    public function country(): BelongsTo
     {
-        return $this->hasOne(
+        return $this->belongsTo(
             ProductCountry::class,
-            'id',
-            'country_id'
+            'product_country_id',
+            'id'
         );
     }
 }

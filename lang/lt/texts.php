@@ -34,6 +34,10 @@ return [
     'faqSeventhTitle' => '7. Ar siūlote NT tik dideliems investuotojams?',
     'faqSeventhDescription' => 'Ne – mūsų portfelyje yra tiek aukštos klasės projektų dideliems fondams, tiek patrauklių galimybių privatiems investuotojams.',
 
+    'casesTitle' => 'Atvejai',
+    'casesDescription' => '',
+    'casesEmpty' => 'Atvejų nerasta.',
+
     'bookConsultationFirstParagraph' => 'Ieškote investicinių galimybių? Mes padėsime žengti pirmą žingsnį.',
     'bookConsultationSecondParagraph' => 'Mūsų komanda pasiruošusi atsakyti į visus Jūsų klausimus – nuo pirmos konsultacijos iki NT įsigijimo ar valdymo sprendimų.',
     'bookConsultationEmail' => 'El. paštas',

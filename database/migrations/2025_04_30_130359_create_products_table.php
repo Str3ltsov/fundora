@@ -16,9 +16,9 @@ return new class extends Migration
             $table->string('address', 100);
             $table->string('image')->nullable();
             $table->boolean('is_visible')->default(true);
-            $table->foreignId('country_id')
+            $table->foreignId('product_country_id')
                 ->nullable()
-                ->constrained('product_countries');
+                ->constrained();
             $table->timestamps();
         });
     }
