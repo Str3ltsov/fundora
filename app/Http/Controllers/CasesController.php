@@ -24,12 +24,13 @@ class CasesController extends Controller
         else
             $this->cases = Product::where('is_visible', true)->get();
 
-        $this->cases = $this->casesService->getPaginatedCases($this->cases, 5);
+        $this->cases = $this->cases->toQuery()->paginate(5)->appends($query);
 
         return view('cases.index')
             ->with([
                 'cases' => $this->cases,
-                'countries' => ProductCountry::all()
+                'countries' => ProductCountry::all(),
+                'selectedCountry' => $query['country'] ?? null
             ]);
     }
 }

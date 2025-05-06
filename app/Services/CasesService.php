@@ -3,7 +3,6 @@
 namespace App\Services;
 
 use App\Models\ProductCountry;
-use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 use Illuminate\Database\Eloquent\Collection;
 
 class CasesService implements CasesServiceInterface
@@ -22,10 +21,5 @@ class CasesService implements CasesServiceInterface
             )
             ->first()
             ->products;
-    }
-
-    public function getPaginatedCases(Collection $products, int $perPage): LengthAwarePaginator
-    {
-        return $products->toQuery()->paginate($perPage);
     }
 }

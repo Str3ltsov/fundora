@@ -5,17 +5,18 @@
 @section('content')
     <main class="min-h-100">
         <section class="bg-secondary-color">
-            <div class="text-white max-w-screen-lg mx-auto px-5 py-30 flex flex-col gap-10">
+            <form class="text-white max-w-screen-lg mx-auto px-5 py-30 flex flex-col gap-10">
                 <div class="flex flex-col gap-4">
                     <h2 class="font-medium text-3xl">{{ __('texts.casesTitle') }}</h2>
                     @if (__('texts.casesDescription') != '')
                         <p>{{ __('texts.casesDescription') }}</p>
                     @endif
                     <div class="w-fit py-3 px-4 button bg-button-color hover:bg-secondary-color cursor-pointer">
-                        <select id="countrySelect" class="border-0 outline-0 pr-2 cursor-pointer">
+                        <select id="countrySelect" class="border-0 outline-0 pr-2 cursor-pointer" name="country">
                             <option value="" selected>{{ __('texts.casesChooseCountry') }}</option>
                             @foreach ($countries as $country)
-                                <option value="{{ $country->name }}">{{ $country->name }}</option>
+                                <option value="{{ $country->name }}" @if ($selectedCountry == $country->name) selected @endif>
+                                    {{ $country->name }}</option>
                             @endforeach
                         </select>
                     </div>
@@ -30,7 +31,7 @@
                         {{ $cases->links() }}
                     </div>
                 </div>
-            </div>
+            </form>
         </section>
     </main>
 @endsection
@@ -62,16 +63,6 @@
         const filterCasesByCountry = () => {
             const countrySelect = document.getElementById('countrySelect')
             const countries = document.querySelectorAll('#country')
-
-            for (let i = 1; i < countrySelect.options.length; i++) {
-                const searchParams = new URLSearchParams(window.location.search)
-
-                if (!searchParams.has('country')) break
-
-                if (countrySelect.options[i].value === searchParams.get('country')) {
-                    countrySelect.options[i].selected = true
-                }
-            }
 
             const redirectToFilteredUrl = countryName => {
                 const currentUrl = window.location.href.split('?')[0]
