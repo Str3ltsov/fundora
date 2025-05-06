@@ -51,8 +51,7 @@
                     </div>
                 </div>
             </div>
-            <div
-                class="absolute inset-y-0 right-0 flex items-center pr-2 md:static md:inset-auto md:ml-6 md:pr-0 gap-4">
+            <div class="absolute inset-y-0 right-0 flex items-center md:static md:inset-auto md:ml-6 gap-4">
                 <select id="languages" class="bg-transparent text-white h-11 border-0 outline-0">
                     <option selected>{{ strtoupper(app()->currentLocale()) }}</option>
                     @foreach (config('app.available_locales') as $locale)

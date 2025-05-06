@@ -6,7 +6,7 @@
             {{ __('forms.name') }}
         </label>
         <input type="text" id="name" name="name"
-            class="bg-gray-700 focus:border-gray-300 text-white block w-full px-4 py-3" />
+            class="bg-gray-700 border-0 focus:outline-gray-300 text-white block w-full px-4 py-3" />
         @error('name')
             <span class="text-red-500 pt-2">{{ $message }}</span>
         @enderror
@@ -16,7 +16,7 @@
             {{ __('forms.phoneNumber') }}
         </label>
         <input type="text" id="phone_number" name="phone_number"
-            class="bg-gray-700 focus:border-gray-300 text-white block w-full px-4 py-3" />
+            class="bg-gray-700 border-0 focus:outline-gray-300 text-white block w-full px-4 py-3" />
         @error('phone_number')
             <span class="text-red-500 pt-2">{{ $message }}</span>
         @enderror
@@ -26,7 +26,7 @@
             {{ __('forms.email') }}
         </label>
         <input type="text" id="email" name="email"
-            class="bg-gray-700 focus:border-gray-300 text-white block w-full px-4 py-3" />
+            class="bg-gray-700 border-0 focus:outline-gray-300 text-white block w-full px-4 py-3" />
         @error('email')
             <span class="text-red-500 py-2">{{ $message }}</span>
         @enderror

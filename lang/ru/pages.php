@@ -7,6 +7,6 @@ return [
     'services' => 'Услуги',
     'faq' => 'FAQ',
     'cases' => 'Случаи',
-    'bookConsultation' => 'Записаться на консультацию'
-
+    'bookConsultation' => 'Записаться на консультацию',
+    'login' => 'Войти как Aдмин'
 ];

@@ -7,6 +7,7 @@ return [
     'services' => 'Paslaugos',
     'faq' => 'DUK',
     'cases' => 'Atvejai',
-    'bookConsultation' => 'Užsisakyti Konsultaciją'
+    'bookConsultation' => 'Užsisakyti Konsultaciją',
+    'login' => 'Prisijungti kaip Adminas'
 
 ];

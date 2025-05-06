@@ -7,6 +7,7 @@ return [
     'services' => 'Usługi',
     'faq' => 'FAQ',
     'cases' => 'Przypadki',
-    'bookConsultation' => 'Zarezerwuj konsultację'
+    'bookConsultation' => 'Zarezerwuj konsultację',
+    'login' => 'Zaloguj się jako Admin'
 
 ];
