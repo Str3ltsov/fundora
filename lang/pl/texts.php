@@ -34,6 +34,11 @@ return [
     'faqSeventhTitle' => '7. Czy oferujecie nieruchomości tylko dużym inwestorom?',
     'faqSeventhDescription' => 'Nie – w naszej ofercie są zarówno projekty dla dużych funduszy, jak i ciekawe możliwości dla inwestorów indywidualnych.',
 
+    'casesTitle' => 'Sprawy',
+    'casesDescription' => '',
+    'casesChooseCountry' => 'Wybierz kraj',
+    'casesEmpty' => 'Nie znaleziono żadnych przypadków',
+
     'bookConsultationFirstParagraph' => 'Szukasz okazji inwestycyjnych? Pozwól nam pomóc Ci zrobić pierwszy krok.',
     'bookConsultationSecondParagraph' => 'Nasz zespół jest gotowy odpowiedzieć na wszystkie Twoje pytania – od pierwszej konsultacji po wsparcie w zakresie przejęcia lub zarządzania.',
     'bookConsultationEmail' => 'E-mail',

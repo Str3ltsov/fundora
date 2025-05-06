@@ -10,7 +10,9 @@
                     <h1 class="font-medium text-5xl leading-14">{{ __('home.heroTitle') }}</h1>
                     <p class="text-lg">{{ __('home.heroDescription') }}</p>
                     <button type="button" class="button bg-button-color h-13 w-fit hover:bg-secondary-color">
-                        <a href="javascript:void(0)" class="py-4 px-6">{{ __('home.heroButton') }}</a>
+                        <a href="{{ route('cases') }}" class="py-4 px-6">
+                            {{ __('home.heroButton') }}
+                        </a>
                     </button>
                 </div>
             </div>

@@ -34,6 +34,11 @@ return [
     'faqSeventhTitle' => '7. Is Fundora only for large investors?',
     'faqSeventhDescription' => 'No. Our portfolio includes both premium projects for large funds and appealing options for private investors.',
 
+    'casesTitle' => 'Cases',
+    'casesDescription' => '',
+    'casesChooseCountry' => 'Choose a country',
+    'casesEmpty' => 'No cases have been found.',
+
     'bookConsultationFirstParagraph' => 'Looking for investment opportunities? Let us help you take the first step.',
     'bookConsultationSecondParagraph' => 'Our team is ready to answer all your questions – from the first consultation to acquisition or management support.',
     'bookConsultationEmail' => 'Email',

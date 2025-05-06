@@ -1,4 +1,4 @@
-<nav class="bg-header-color fixed top-0 min-w-full shadow-md">
+<nav class="bg-header-color fixed top-0 min-w-full shadow-md z-1">
     <div class="mx-auto max-w-screen-lg px-5">
         <div class="relative flex h-20 items-center justify-between">
             <div class="absolute inset-y-0 left-0 flex items-center md:hidden">
@@ -44,16 +44,16 @@
                             class="@if (request()->is('faq')) underline @endif flex items-center px-4 py-3 text-md font-medium text-white hover:bg-primary-color">
                             {{ __('pages.faq') }}
                         </a>
-                        {{-- <a href="javascript:void(0)"
+                        <a href="{{ route('cases') }}"
                             class="@if (request()->is('cases')) underline @endif flex items-center px-4 py-3 text-md font-medium text-white hover:bg-primary-color">
                             {{ __('pages.cases') }}
-                        </a> --}}
+                        </a>
                     </div>
                 </div>
             </div>
             <div
                 class="absolute inset-y-0 right-0 flex items-center pr-2 md:static md:inset-auto md:ml-6 md:pr-0 gap-4">
-                <select id="languages" class="bg-transparent text-white h-11">
+                <select id="languages" class="bg-transparent text-white h-11 border-0 outline-0">
                     <option selected>{{ strtoupper(app()->currentLocale()) }}</option>
                     @foreach (config('app.available_locales') as $locale)
                         @if ($locale !== app()->currentLocale())
@@ -90,10 +90,10 @@
                 class="block @if (request()->is('faq')) underline @endif px-3 py-2 text-base font-medium text-white hover:bg-primary-color">
                 {{ __('pages.faq') }}
             </a>
-            {{-- <a href="javascript:void(0)"
+            <a href="{{ route('cases') }}"
                 class="block @if (request()->is('cases')) underline @endif px-3 py-2 text-base font-medium text-white hover:bg-primary-color">
                 {{ __('pages.cases') }}
-            </a> --}}
+            </a>
             <button type="button"
                 class="button bg-button-color hover:bg-secondary-color text-white h-11 w-fit my-4 ms-3">
                 <a href="{{ route('book-consultation.index') }}" class="flex text-md px-6 py-2">

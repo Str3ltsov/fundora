@@ -34,6 +34,11 @@ return [
     'faqSeventhTitle' => '7. Вы работаете только с крупными инвесторами?',
     'faqSeventhDescription' => 'Нет. У нас есть как крупные инвестиционные проекты, так и доступные варианты для частных инвесторов.',
 
+    'casesTitle' => 'Кейсы',
+    'casesDescription' => '',
+    'casesChooseCountry' => 'Выберите страну',
+    'casesEmpty' => 'Не найдено ни одного случая',
+
     'bookConsultationFirstParagraph' => 'Ищете инвестиционные возможности? Мы поможем сделать первый шаг.',
     'bookConsultationSecondParagraph' => 'Наша команда готова ответить на все ваши вопросы – от консультации до покупки и управления.',
     'bookConsultationEmail' => 'Электронная почта',
