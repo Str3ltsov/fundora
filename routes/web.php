@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Admin\ProfileController;
 use App\Http\Controllers\AboutUsController;
+use App\Http\Controllers\Admin\PageController;
 use App\Http\Controllers\BookConsultationController;
 use App\Http\Controllers\CasesController;
 use App\Http\Controllers\FAQController;
@@ -23,12 +24,18 @@ Route::resource("book-consultation", BookConsultationController::class)
     ->only(["index", "store"]);
 
 Route::prefix('admin')->group(function () {
-    Route::get('/dashboard', fn() => view('admin.dashboard'))
-        ->middleware(['auth', 'verified'])->name('dashboard');
+    Route::middleware(['auth', 'verified'])->group(function () {
+        Route::get('/', fn() => redirect(route('dashboard')));
+        Route::get('/dashboard', fn() => view('admin.dashboard'))
+            ->name('dashboard');
+        Route::resource('pages', PageController::class);
+    });
 
     Route::middleware('auth')->group(function () {
-        Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-        Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+        Route::get('/profile', [ProfileController::class, 'edit'])
+            ->name('profile.edit');
+        Route::patch('/profile', [ProfileController::class, 'update'])
+            ->name('profile.update');
     });
 });
 
