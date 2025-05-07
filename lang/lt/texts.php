@@ -16,7 +16,7 @@ return [
     'servicesThirdTitle' => '3. Turtinių sandorių tarpininkavimas',
     'servicesThirdDescription' => 'Kiekvienas klientas gauna pilną paslaugų paketą – nuo derybų ir patikros iki dokumentų tvarkymo bei teisinių konsultacijų.',
     'servicesFourthTitle' => '4. Po-investicinė priežiūra',
-    'servicesFourthDescription' => 'Padedame stebėti grąžą ir rekomenduoti veiksmus, didinančius turto vertę. Padedame surasti partnerius kurie valdytų turtą ir ieškoti nuomininkų,',
+    'servicesFourthDescription' => 'Padedame stebėti grąžą ir rekomenduoti veiksmus, didinančius turto vertę. Padedame surasti partnerius kurie valdytų turtą ir ieškoti nuomininkų.',
 
     'faqTitle' => 'Dažnai užduodami klausimai',
     'faqFirstTitle' => '1. Apie Jus nieko negirdėjome. Galite pateikti daugiau informacijos.',

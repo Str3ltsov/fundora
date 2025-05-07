@@ -7,6 +7,7 @@ use App\Http\Requests\UpdatePageRequest;
 use App\Models\Page;
 use App\Services\PageService;
 use Illuminate\Contracts\View\View;
+use Illuminate\Http\RedirectResponse;
 
 class PageController extends Controller
 {
@@ -25,7 +26,7 @@ class PageController extends Controller
             ->with('page', Page::findOrFail($page->id));
     }
 
-    public function update(UpdatePageRequest $request, Page $page)
+    public function update(UpdatePageRequest $request, Page $page): RedirectResponse
     {
         try {
             $validatedInput = $request->validated();

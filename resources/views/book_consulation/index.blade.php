@@ -21,7 +21,7 @@
                             <div class="flex items-center gap-4 text-white">
                                 <x-grommet-mail-option class="size-8" />
                                 <div>
-                                    <h2 class="font-medium">{{ __('texts.bookConsultationEmail') }}</h2>
+                                    <h4 class="font-medium">{{ __('texts.bookConsultationEmail') }}</h4>
                                     <a href="mailto:info@fundoraglobal.com" class="opacity-75 hover:opacity-50">
                                         {{ __('info@fundoraglobal.com') }}
                                     </a>
@@ -30,7 +30,7 @@
                             <div class="flex items-center gap-4 text-white">
                                 <x-heroicon-o-phone class="size-8" />
                                 <div>
-                                    <h2 class="font-medium">{{ __('texts.bookConsultationPhone') }}</h2>
+                                    <h4 class="font-medium">{{ __('texts.bookConsultationPhone') }}</h4>
                                     <a href="tel:+37061572799" class="opacity-75 hover:opacity-50">
                                         {{ __('+370 615 82 799') }}
                                     </a>

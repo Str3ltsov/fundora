@@ -2,6 +2,7 @@
 
 namespace App\Services;
 
+use App\Models\Page;
 use Illuminate\Database\Eloquent\Collection;
 
 class PageService implements PageServiceInterface
@@ -15,5 +16,10 @@ class PageService implements PageServiceInterface
             ];
             $pageTranslation->update($currentTranslationValidatedInput);
         }
+    }
+
+    public function getPageByUri(?string $uri): Page|null
+    {
+        return Page::where('uri', $uri)->first();
     }
 }
