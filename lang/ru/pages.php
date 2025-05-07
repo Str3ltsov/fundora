@@ -8,5 +8,9 @@ return [
     'faq' => 'FAQ',
     'cases' => 'Случаи',
     'bookConsultation' => 'Записаться на консультацию',
-    'login' => 'Войти как Aдмин'
+    'login' => 'Войти как Aдмин',
+    'dashboard' => 'Панель',
+    'pages' => 'Страницы',
+    'profile' => 'Профиль'
+
 ];

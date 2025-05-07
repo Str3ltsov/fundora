@@ -11,7 +11,7 @@ class UpdatePageRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return false;
+        return true;
     }
 
     /**
@@ -22,7 +22,15 @@ class UpdatePageRequest extends FormRequest
     public function rules(): array
     {
         return [
-            //
+            'title_en' => 'required|string|max:100',
+            'title_lt' => 'required|string|max:100',
+            'title_ru' => 'required|string|max:100',
+            'title_pl' => 'required|string|max:100',
+            'description_en' => 'nullable',
+            'description_lt' => 'nullable',
+            'description_ru' => 'nullable',
+            'description_pl' => 'nullable',
+            'page_id' => 'required|integer'
         ];
     }
 }

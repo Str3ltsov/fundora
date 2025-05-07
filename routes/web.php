@@ -28,7 +28,8 @@ Route::prefix('admin')->group(function () {
         Route::get('/', fn() => redirect(route('dashboard')));
         Route::get('/dashboard', fn() => view('admin.dashboard'))
             ->name('dashboard');
-        Route::resource('pages', PageController::class);
+        Route::resource('pages', PageController::class)
+            ->only(['index', 'edit', 'update']);
     });
 
     Route::middleware('auth')->group(function () {

@@ -13,7 +13,8 @@ return new class extends Migration
     {
         Schema::create('page_translations', function (Blueprint $table) {
             $table->id();
-            $table->string('name', 100);
+            $table->string('name', 30);
+            $table->string('title', 100);
             $table->longText('description')->nullable();
             $table->string('locale', 2);
             $table->foreignId('page_id')

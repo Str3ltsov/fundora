@@ -3,6 +3,7 @@
 return [
 
     'successConsultationSubmit' => 'Pomyślnie przesłano Twoją konsultację.',
-    'errorInvalidLanguage' => 'Nieprawidłowy język.'
+    'errorInvalidLanguage' => 'Nieprawidłowy język.',
+    'successPageUpdate' => 'Pomyślnie zaktualizowano stronę'
 
 ];

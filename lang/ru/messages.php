@@ -3,6 +3,7 @@
 return [
 
     'successConsultationSubmit' => 'Ваша консультация успешно отправлена.',
-    'errorInvalidLanguage' => 'Неверный язык.'
+    'errorInvalidLanguage' => 'Неверный язык.',
+    'successPageUpdate' => 'Страница успешно обновлена'
 
 ];

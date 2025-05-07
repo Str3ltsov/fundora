@@ -6,9 +6,18 @@ return [
     'phoneNumber' => 'Telefono numeris',
     'email' => 'El. paštas',
     'submit' => 'Pateikti',
-    'slaptažodis' => 'Slaptažodis',
-    'prisimintiMane' => 'Prisiminti Mane',
-    'prisijungti' => 'Prisijungti',
-    'atsijungti' => 'Atsijungti'
+    'password' => 'Slaptažodis',
+    'rememberMe' => 'Prisiminti Mane',
+    'login' => 'Prisijungti',
+    'logout' => 'Atsijungti',
+    'title' => 'Pavadinimas',
+    'description' => 'Aprašymas',
+    'createdAt' => 'Sukurta',
+    'updatedAt' => 'Atnaujinta',
+    'actions' => 'Veiksmai',
+    'view' => 'Peržiūrėti',
+    'edit' => 'Redaguoti',
+    'save' => 'Išsaugoti',
+    'cancel' => 'Atšaukti'
 
 ];

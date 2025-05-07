@@ -9,6 +9,15 @@ return [
     'password' => 'Пароль',
     'rememberMe' => 'Запомни Mеня',
     'login' => 'Войти',
-    'logout' => 'Выйти'
+    'logout' => 'Выйти',
+    'title' => 'Название',
+    'description' => 'Описание',
+    'createdAt' => 'Создано',
+    'updatedAt' => 'Обновлено',
+    'actions' => 'Действия',
+    'view' => 'Просмотр',
+    'edit' => 'Редактировать',
+    'save' => 'Сохранить',
+    'cancel' => 'Отмена'
 
 ];

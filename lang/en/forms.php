@@ -9,6 +9,15 @@ return [
     'password' => 'Password',
     'rememberMe' => 'Remember Me',
     'login' => 'Login',
-    'logout' => 'Logout'
+    'logout' => 'Logout',
+    'title' => 'Title',
+    'description' => 'Description',
+    'createdAt' => 'Created At',
+    'updatedAt' => 'Updated At',
+    'actions' => 'Actions',
+    'view' => 'View',
+    'edit' => 'Edit',
+    'save' => 'Save',
+    'cancel' => 'Cancel'
 
 ];

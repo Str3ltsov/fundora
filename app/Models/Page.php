@@ -29,9 +29,20 @@ class Page extends Model
         return $this->defaultTranslation?->name;
     }
 
+    public function getTitleAttribute(): string|null
+    {
+        return $this->defaultTranslation?->title;
+    }
+
     public function getDescriptionAttribute(): string|null
     {
         return $this->defaultTranslation?->description;
+    }
+
+    public function translation(string $locale): PageTranslation|null
+    {
+        return $this->hasOne(PageTranslation::class)
+            ->where("locale", '=', $locale)->first();
     }
 
     public function translations(): HasMany

@@ -8,6 +8,9 @@ return [
     'faq' => 'FAQ',
     'cases' => 'Cases',
     'bookConsultation' => 'Book a Consultation',
-    'login' => 'Login as Admin'
+    'login' => 'Login as Admin',
+    'dashboard' => 'Dashboard',
+    'pages' => 'Pages',
+    'profile' => 'Profile'
 
 ];

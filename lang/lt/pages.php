@@ -8,6 +8,9 @@ return [
     'faq' => 'DUK',
     'cases' => 'Atvejai',
     'bookConsultation' => 'Užsisakyti Konsultaciją',
-    'login' => 'Prisijungti kaip Adminas'
+    'login' => 'Prisijungti kaip Adminas',
+    'dashboard' => 'Valdymo skydas',
+    'pages' => 'Puslapiai',
+    'profile' => 'Profilis'
 
 ];

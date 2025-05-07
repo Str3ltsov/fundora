@@ -24,26 +24,54 @@ class PageSeeder extends Seeder
         ]
     ];
 
-    private array $pageNames = [
+    private array $pageData = [
         'en' => [
-            'Fundora – Global Real Estate Opportunities',
-            'Our Services',
-            'FAQ'
+            'names' => [
+                'About us',
+                'Services',
+                'FAQ'
+            ],
+            'titles' => [
+                'Fundora – Global Real Estate Opportunities',
+                'Our Services',
+                'FAQ'
+            ]
         ],
         'lt' => [
-            'Fundora – Global Real Estate Opportunities',
-            'Paslaugos',
-            'Dažnai užduodami klausimai'
+            'names' => [
+                'Apie mus',
+                'Paslaugos',
+                'DUK'
+            ],
+            'titles' => [
+                'Fundora – Global Real Estate Opportunities',
+                'Paslaugos',
+                'Dažnai užduodami klausimai'
+            ]
         ],
         'ru' => [
-            'Fundora – Global Real Estate Opportunities',
-            'Наши услуги',
-            'Часто задаваемые вопросы'
+            'names' => [
+                'О нас',
+                'Услуги',
+                'FAQ'
+            ],
+            'titles' => [
+                'Fundora – Global Real Estate Opportunities',
+                'Наши услуги',
+                'Часто задаваемые вопросы'
+            ]
         ],
         'pl' => [
-            'Fundora – Global Real Estate Opportunities',
-            'Usługi',
-            'Często zadawane pytania'
+            'names' => [
+                'O nas',
+                'Usługi',
+                'FAQ'
+            ],
+            'titles' => [
+                'Fundora – Global Real Estate Opportunities',
+                'Usługi',
+                'Często zadawane pytania'
+            ]
         ]
     ];
 
@@ -60,21 +88,19 @@ class PageSeeder extends Seeder
         }
 
         foreach (config('app.available_locales') as $locale) {
-            $initialValue = 1;
-            static $pageId = $initialValue;
 
-            foreach ($this->pageNames[$locale] as $pageName) {
+            for ($i = 0; $i < count($this->pages); $i++) {
+                $currentPageData = $this->pageData[$locale];
+
                 DB::table('page_translations')->insert([
-                    "name" => $pageName,
+                    "name" => $currentPageData['names'][$i],
+                    "title" => $currentPageData['titles'][$i],
                     "locale" => $locale,
-                    "page_id" => $pageId,
+                    "page_id" => $i + 1,
                     "created_at" => now(),
                     "updated_at" => now()
                 ]);
-                $pageId++;
             }
-
-            $pageId = $initialValue;
         }
     }
 }

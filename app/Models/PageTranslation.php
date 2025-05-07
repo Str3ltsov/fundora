@@ -9,6 +9,7 @@ class PageTranslation extends Model
 {
     protected $fillable = [
         "name",
+        "title",
         "description",
         "locale",
         "page_id"
@@ -16,6 +17,7 @@ class PageTranslation extends Model
 
     protected $casts = [
         "name" => "string",
+        "title" => "string",
         "description" => "string",
         "locale" => "string",
         "page_id" => "integer"

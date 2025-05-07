@@ -10,12 +10,17 @@
 
     <link rel="icon" href="{{ asset('images/logo1.jpg') }}">
 
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
-    <!-- Scripts -->
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @if (config('app.env') == 'production' && is_file('build/manifest.json'))
+        <link href="{{ asset('build/assets/app-fBPLLfYq.css') }}" rel="stylesheet">
+        <script src="{{ asset('build/assets/app-eMHK6VFw.js') }}"></script>
+    @else
+        @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @endif
+
+    @stack('styles')
 </head>
 
 <body class="font-sans antialiased">
@@ -36,6 +41,11 @@
             {{ $slot }}
         </main>
     </div>
+
+    <script src="{{ asset('ckeditor5/build/ckeditor.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+
+    @stack('scripts')
 </body>
 
 </html>

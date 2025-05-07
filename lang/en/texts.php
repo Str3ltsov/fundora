@@ -42,6 +42,8 @@ return [
     'bookConsultationFirstParagraph' => 'Looking for investment opportunities? Let us help you take the first step.',
     'bookConsultationSecondParagraph' => 'Our team is ready to answer all your questions – from the first consultation to acquisition or management support.',
     'bookConsultationEmail' => 'Email',
-    'bookConsultationPhone' => 'Phone (WhatsApp, Telegram)'
+    'bookConsultationPhone' => 'Phone (WhatsApp, Telegram)',
+
+    'pagesEmpty' => 'No pages have been found.'
 
 ];

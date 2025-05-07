@@ -42,6 +42,8 @@ return [
     'bookConsultationFirstParagraph' => 'Ieškote investicinių galimybių? Mes padėsime žengti pirmą žingsnį.',
     'bookConsultationSecondParagraph' => 'Mūsų komanda pasiruošusi atsakyti į visus Jūsų klausimus – nuo pirmos konsultacijos iki NT įsigijimo ar valdymo sprendimų.',
     'bookConsultationEmail' => 'El. paštas',
-    'bookConsultationPhone' => 'Telefonas (WhatsApp, Telegram)'
+    'bookConsultationPhone' => 'Telefonas (WhatsApp, Telegram)',
+
+    'pagesEmpty' => 'Nerasta jokių puslapių.'
 
 ];

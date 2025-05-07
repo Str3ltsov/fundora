@@ -42,6 +42,8 @@ return [
     'bookConsultationFirstParagraph' => 'Ищете инвестиционные возможности? Мы поможем сделать первый шаг.',
     'bookConsultationSecondParagraph' => 'Наша команда готова ответить на все ваши вопросы – от консультации до покупки и управления.',
     'bookConsultationEmail' => 'Электронная почта',
-    'bookConsultationPhone' => 'Телефон (WhatsApp, Telegram)'
+    'bookConsultationPhone' => 'Телефон (WhatsApp, Telegram)',
+
+    'pagesEmpty' => 'Страницы не найдены.'
 
 ];
