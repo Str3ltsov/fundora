@@ -7,21 +7,28 @@ use App\Http\Requests\UpdatePageRequest;
 use App\Models\Page;
 use App\Services\PageService;
 use Illuminate\Contracts\View\View;
+use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Http\RedirectResponse;
 
 class PageController extends Controller
 {
+    use AuthorizesRequests;
+
     public function __construct(private PageService $pageService) {}
 
 
     public function index(): View
     {
+        $this->authorize('viewAny', Page::class);
+
         return view('admin.pages.index')
             ->with('pages', Page::all());
     }
 
     public function edit(Page $page): View
     {
+        $this->authorize('update', $page);
+
         return view('admin.pages.edit')
             ->with('page', Page::findOrFail($page->id));
     }
@@ -29,6 +36,8 @@ class PageController extends Controller
     public function update(UpdatePageRequest $request, Page $page): RedirectResponse
     {
         try {
+            $this->authorize('update', $page);
+
             $validatedInput = $request->validated();
             $pageTranslations = $page->translations()->get();
 

@@ -13,6 +13,7 @@ interface CasesServiceInterface
     public function createCaseTranslations(int $caseId, array $validatedInput): void;
     public function updateCase(Product $case, array $validatedInput): void;
     public function updateCaseTranslations(Collection $caseTranslations, array $validatedInput): void;
+    public function casesWithSameImageExist(string $image): bool;
     public function uploadCaseImage(object $image): void;
     public function removeCaseImage(string $imageName): void;
 }

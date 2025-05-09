@@ -7,25 +7,31 @@ use App\Http\Requests\StoreProductRequest;
 use App\Http\Requests\UpdateProductRequest;
 use App\Models\Product;
 use App\Models\ProductCountry;
-use App\Models\ProductTranslation;
 use App\Services\CasesService;
 use Illuminate\Http\Request;
 use Illuminate\Contracts\View\View;
 use Illuminate\Http\RedirectResponse;
 use Exception;
+use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 
 class CaseController extends Controller
 {
+    use AuthorizesRequests;
+
     public function __construct(private CasesService $casesService) {}
 
     public function index(): View
     {
+        $this->authorize('viewAny', Product::class);
+
         return view('admin.cases.index')
             ->with('cases', Product::paginate(10));
     }
 
     public function create(): View
     {
+        $this->authorize('create', Product::class);
+
         return view('admin.cases.create')
             ->with('countries', ProductCountry::all());
     }
@@ -33,6 +39,8 @@ class CaseController extends Controller
     public function store(StoreProductRequest $request): RedirectResponse
     {
         try {
+            $this->authorize('create', Product::class);
+
             $validatedInput = $request->validated();
 
             $this->casesService->createCase($validatedInput);
@@ -51,6 +59,8 @@ class CaseController extends Controller
 
     public function edit(Product $case): View
     {
+        $this->authorize('update', $case);
+
         return view('admin.cases.edit')
             ->with([
                 'case' => $case,
@@ -61,6 +71,8 @@ class CaseController extends Controller
     public function update(UpdateProductRequest $request, Product $case): RedirectResponse
     {
         try {
+            $this->authorize('update', $case);
+
             $validatedInput = $request->validated();
             $validatedInput['image'] = array_key_exists('image',  $validatedInput)
                 ? $validatedInput['image']
@@ -88,8 +100,12 @@ class CaseController extends Controller
     public function destroy(Product $case): RedirectResponse
     {
         try {
+            $this->authorize('delete', $case);
+
             $case->delete();
-            $this->casesService->removeCaseImage($case->image);
+
+            if (!$this->casesService->casesWithSameImageExist($case->image))
+                $this->casesService->removeCaseImage($case->image);
 
             return redirect(route('cases.index'))
                 ->with('success', __('messages.successCaseDelete') . " '$case->name'.");

@@ -14,8 +14,7 @@
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
     @if (config('app.env') == 'production' && is_file('build/manifest.json'))
-        <link href="{{ asset('build/assets/app-pZwxIOIk.css') }}" rel="stylesheet">
-        <script src="{{ asset('build/assets/app-Bf4POITK.js') }}"></script>
+        <link href="{{ asset('build/assets/app-C0aUFJx3.css') }}" rel="stylesheet">
     @else
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     @endif
@@ -44,6 +43,10 @@
 
     <script src="{{ asset('ckeditor5/build/ckeditor.js') }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+
+    @if (config('app.env') == 'production' && is_file('build/manifest.json'))
+        <script src="{{ asset('build/assets/app-Bf4POITK.js') }}"></script>
+    @endif
 
     @stack('scripts')
 </body>

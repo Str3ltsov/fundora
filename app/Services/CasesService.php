@@ -85,6 +85,17 @@ class CasesService implements CasesServiceInterface
         }
     }
 
+    public function casesWithSameImageExist(string $image): bool
+    {
+        $products = Product::select('id', 'image')
+            ->where('image', $image)->get();
+
+        if ($products->isEmpty())
+            return false;
+
+        return true;
+    }
+
     public function uploadCaseImage(object $image): void
     {
         $imageName = $image->getClientOriginalName();

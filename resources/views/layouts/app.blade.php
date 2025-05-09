@@ -22,8 +22,7 @@
 
     <!-- Styles / Scripts -->
     @if (config('app.env') == 'production' && is_file('build/manifest.json'))
-        <link href="{{ asset('build/assets/app-pZwxIOIk.css') }}" rel="stylesheet">
-        <script src="{{ asset('build/assets/app-Bf4POITK.js') }}"></script>
+        <link href="{{ asset('build/assets/app-C0aUFJx3.css') }}" rel="stylesheet">
     @else
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     @endif
@@ -39,6 +38,10 @@
     @include('layouts.partials.session_messages')
     @yield('content')
     @include('layouts.partials.footer')
+
+    @if (config('app.env') == 'production' && is_file('build/manifest.json'))
+        <script src="{{ asset('build/assets/app-Bf4POITK.js') }}"></script>
+    @endif
 
     @stack('scripts')
 </body>
