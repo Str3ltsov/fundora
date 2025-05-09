@@ -7,6 +7,11 @@ return [
     'services' => 'Paslaugos',
     'faq' => 'DUK',
     'cases' => 'Atvejai',
-    'bookConsultation' => 'Užsisakyti Konsultaciją'
+    'bookConsultation' => 'Užsisakyti Konsultaciją',
+    'login' => 'Prisijungti kaip Adminas',
+    'dashboard' => 'Valdymo skydas',
+    'pages' => 'Puslapiai',
+    'profile' => 'Profilis',
+    'adminPanel' => 'Admino Skydelis'
 
 ];

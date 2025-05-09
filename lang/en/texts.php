@@ -38,10 +38,16 @@ return [
     'casesDescription' => '',
     'casesChooseCountry' => 'Choose a country',
     'casesEmpty' => 'No cases have been found.',
+    'casesDeleteConfirmation' => 'Are you sure you want to delete this case?',
 
     'bookConsultationFirstParagraph' => 'Looking for investment opportunities? Let us help you take the first step.',
     'bookConsultationSecondParagraph' => 'Our team is ready to answer all your questions – from the first consultation to acquisition or management support.',
     'bookConsultationEmail' => 'Email',
-    'bookConsultationPhone' => 'Phone (WhatsApp, Telegram)'
+    'bookConsultationPhone' => 'Phone (WhatsApp, Telegram)',
+
+    'pagesEmpty' => 'No pages have been found.',
+
+    'profileInformation' => 'Profile Information',
+    'updatePassword' => 'Update Password'
 
 ];

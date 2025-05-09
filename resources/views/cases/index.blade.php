@@ -11,8 +11,8 @@
                     @if (__('texts.casesDescription') != '')
                         <p>{{ __('texts.casesDescription') }}</p>
                     @endif
-                    <div class="w-fit py-3 px-4 button bg-button-color hover:bg-secondary-color cursor-pointer">
-                        <select id="countrySelect" class="border-0 outline-0 pr-2 cursor-pointer" name="country">
+                    <div class="w-fit py-2 px-3 button bg-button-color hover:bg-secondary-color cursor-pointer">
+                        <select id="countrySelect" class="border-0 outline-0 cursor-pointer bg-transparent" name="country">
                             <option value="" selected>{{ __('texts.casesChooseCountry') }}</option>
                             @foreach ($countries as $country)
                                 <option value="{{ $country->name }}" @if ($selectedCountry == $country->name) selected @endif>

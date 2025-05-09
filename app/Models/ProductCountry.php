@@ -23,6 +23,12 @@ class ProductCountry extends Model
         return $this->defaultTranslation?->name;
     }
 
+    public function translation(string $locale): ProductCountryTranslation|null
+    {
+        return $this->hasOne(ProductCountryTranslation::class)
+            ->where("locale", '=', $locale)->first();
+    }
+
     public function translations(): HasMany
     {
         return $this->hasMany(

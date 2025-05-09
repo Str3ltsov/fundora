@@ -18,12 +18,12 @@
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
-    <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet" />
+    <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
     <!-- Styles / Scripts -->
     @if (config('app.env') == 'production' && is_file('build/manifest.json'))
-        <link href="{{ asset('build/assets/app-fBPLLfYq.css') }}" rel="stylesheet">
-        <script src="{{ asset('build/assets/app-eMHK6VFw.js') }}"></script>
+        <link href="{{ asset('build/assets/app-pZwxIOIk.css') }}" rel="stylesheet">
+        <script src="{{ asset('build/assets/app-Bf4POITK.js') }}"></script>
     @else
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     @endif
@@ -32,6 +32,9 @@
 </head>
 
 <body class="min-h-screen min-w-100 bg-secondary-color pt-20">
+    @auth
+        @include('layouts.partials.settings_button')
+    @endauth
     @include('layouts.partials.header')
     @include('layouts.partials.session_messages')
     @yield('content')

@@ -21,9 +21,8 @@ class CasesController extends Controller
 
         if ($query && isset($query['country']))
             $this->cases = $this->casesService->getCasesByCountry($query['country']);
-        else
-            $this->cases = Product::where('is_visible', true)->get();
 
+        $this->cases = $this->casesService->getVisibleCases($this->cases);
         $this->cases = $this->cases->toQuery()->paginate(5)->appends($query);
 
         return view('cases.index')

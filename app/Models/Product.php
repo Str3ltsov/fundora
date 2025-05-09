@@ -51,6 +51,12 @@ class Product extends Model
         return $this->defaultTranslation?->main_advantages;
     }
 
+    public function translation(string $locale): ProductTranslation|null
+    {
+        return $this->hasOne(ProductTranslation::class)
+            ->where("locale", '=', $locale)->first();
+    }
+
     public function translations(): HasMany
     {
         return $this->hasMany(ProductTranslation::class);

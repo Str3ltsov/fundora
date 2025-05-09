@@ -4,6 +4,8 @@ namespace App\Providers;
 
 use App\Services\CasesService;
 use App\Services\CasesServiceInterface;
+use App\Services\PageService;
+use App\Services\PageServiceInterface;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\URL;
@@ -22,6 +24,7 @@ class AppServiceProvider extends ServiceProvider
             );
 
         $this->app->bind(CasesServiceInterface::class, CasesService::class);
+        $this->app->bind(PageServiceInterface::class, PageService::class);
     }
 
     /**
