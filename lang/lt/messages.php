@@ -8,5 +8,6 @@ return [
     'successCaseCreate' => 'Atvejis sėkmingai sukurta',
     'successCaseUpdate' => 'Atvejis sėkmingai atnaujinta',
     'successCaseDelete' => 'Atvejis sėkmingai ištrinta',
+    'saved' => 'Išsaugota.'
 
 ];

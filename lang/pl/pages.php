@@ -11,6 +11,7 @@ return [
     'login' => 'Zaloguj się jako Admin',
     'dashboard' => 'Dashboard',
     'pages' => 'Strony',
-    'profile' => 'Profil'
+    'profile' => 'Profil',
+    'adminPanel' => 'Panel Adminy'
 
 ];

@@ -27,6 +27,9 @@ return [
     'save' => 'Zapisz',
     'cancel' => 'Anuluj',
     'uploadImage' => 'Prześlij obraz',
-    'uploadDescription' => 'PNG lub JPG'
+    'uploadDescription' => 'PNG lub JPG',
+    'currentPassword' => 'Aktualne hasło',
+    'newPassword' => 'Nowe hasło',
+    'confirmPassword' => 'Potwierdź hasło'
 
 ];

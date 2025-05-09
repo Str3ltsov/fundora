@@ -11,6 +11,7 @@ return [
     'login' => 'Prisijungti kaip Adminas',
     'dashboard' => 'Valdymo skydas',
     'pages' => 'Puslapiai',
-    'profile' => 'Profilis'
+    'profile' => 'Profilis',
+    'adminPanel' => 'Admino Skydelis'
 
 ];

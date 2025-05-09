@@ -8,4 +8,5 @@ return [
     'successCaseCreate' => 'Successfully created case',
     'successCaseUpdate' => 'Successfully updated case',
     'successCaseDelete' => 'Successfully deleted case',
+    'saved' => 'Saved.'
 ];

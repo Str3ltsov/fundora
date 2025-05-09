@@ -8,5 +8,6 @@ return [
     'successCaseCreate' => 'Pomyślnie utworzono sprawę',
     'successCaseUpdate' => 'Pomyślnie zaktualizowano sprawę',
     'successCaseDelete' => 'Pomyślnie usunięto sprawę',
+    'saved' => 'Zapisano.'
 
 ];

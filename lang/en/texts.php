@@ -45,6 +45,9 @@ return [
     'bookConsultationEmail' => 'Email',
     'bookConsultationPhone' => 'Phone (WhatsApp, Telegram)',
 
-    'pagesEmpty' => 'No pages have been found.'
+    'pagesEmpty' => 'No pages have been found.',
+
+    'profileInformation' => 'Profile Information',
+    'updatePassword' => 'Update Password'
 
 ];

@@ -45,6 +45,9 @@ return [
     'bookConsultationEmail' => 'El. paštas',
     'bookConsultationPhone' => 'Telefonas (WhatsApp, Telegram)',
 
-    'pagesEmpty' => 'Nerasta jokių puslapių.'
+    'pagesEmpty' => 'Nerasta jokių puslapių.',
+
+    'profileInformation' => 'Profilio informacija',
+    'updatePassword' => 'Atnaujinti slaptažodį'
 
 ];

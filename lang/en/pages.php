@@ -11,6 +11,7 @@ return [
     'login' => 'Login as Admin',
     'dashboard' => 'Dashboard',
     'pages' => 'Pages',
-    'profile' => 'Profile'
+    'profile' => 'Profile',
+    'adminPanel' => 'Admin Panel'
 
 ];

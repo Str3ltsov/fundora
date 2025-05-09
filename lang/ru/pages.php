@@ -11,6 +11,7 @@ return [
     'login' => 'Войти как Aдмин',
     'dashboard' => 'Панель',
     'pages' => 'Страницы',
-    'profile' => 'Профиль'
+    'profile' => 'Профиль',
+    'adminPanel' => 'Панель Aдмина'
 
 ];

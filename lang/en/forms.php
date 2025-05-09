@@ -27,6 +27,9 @@ return [
     'save' => 'Save',
     'cancel' => 'Cancel',
     'uploadImage' => 'Upload Image',
-    'uploadDescription' => 'PNG or JPG'
+    'uploadDescription' => 'PNG or JPG',
+    'currentPassword' => 'Current Password',
+    'newPassword' => 'New Password',
+    'confirmPassword' => 'Confirm Password'
 
 ];

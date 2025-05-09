@@ -32,6 +32,9 @@
 </head>
 
 <body class="min-h-screen min-w-100 bg-secondary-color pt-20">
+    @auth
+        @include('layouts.partials.settings_button')
+    @endauth
     @include('layouts.partials.header')
     @include('layouts.partials.session_messages')
     @yield('content')

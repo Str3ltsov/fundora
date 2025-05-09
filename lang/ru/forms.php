@@ -27,6 +27,9 @@ return [
     'save' => 'Сохранить',
     'cancel' => 'Отмена',
     'uploadImage' => 'Загрузить изображение',
-    'uploadDescription' => 'PNG или JPG'
+    'uploadDescription' => 'PNG или JPG',
+    'currentPassword' => 'Текущий пароль',
+    'newPassword' => 'Новый пароль',
+    'confirmPassword' => 'Подтвердите пароль'
 
 ];

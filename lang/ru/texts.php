@@ -45,6 +45,9 @@ return [
     'bookConsultationEmail' => 'Электронная почта',
     'bookConsultationPhone' => 'Телефон (WhatsApp, Telegram)',
 
-    'pagesEmpty' => 'Страницы не найдены.'
+    'pagesEmpty' => 'Страницы не найдены.',
+
+    'profileInformation' => 'Информация о профиле',
+    'updatePassword' => 'Обновить пароль'
 
 ];

@@ -27,6 +27,9 @@ return [
     'save' => 'Išsaugoti',
     'cancel' => 'Atšaukti',
     'uploadImage' => 'Įkelti paveikslėlį',
-    'uploadDescription' => 'PNG arba JPG'
+    'uploadDescription' => 'PNG arba JPG',
+    'currentPassword' => 'Dabartinis slaptažodis',
+    'newPassword' => 'Naujas slaptažodis',
+    'confirmPassword' => 'Patvirtinti slaptažodį'
 
 ];

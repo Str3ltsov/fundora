@@ -26,11 +26,9 @@ Route::resource("book-consultation", BookConsultationController::class)
 
 Route::prefix('admin')->group(function () {
     Route::middleware(['auth', 'verified'])->group(function () {
-        Route::get('/', fn() => redirect(route('dashboard')));
-        Route::get('/dashboard', fn() => view('admin.dashboard'))
-            ->name('dashboard');
-        Route::resource('pages', PageController::class)
-            ->only(['index', 'edit', 'update']);
+        Route::get('/', fn() => redirect(route('pages.index')));
+        // Route::get('/dashboard', fn() => view('admin.dashboard'))->name('dashboard');
+        Route::resource('pages', PageController::class)->only(['index', 'edit', 'update']);
         Route::resource('cases', CaseController::class)->except(['show']);
     });
 
