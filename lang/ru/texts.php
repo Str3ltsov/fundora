@@ -38,6 +38,7 @@ return [
     'casesDescription' => '',
     'casesChooseCountry' => 'Выберите страну',
     'casesEmpty' => 'Не найдено ни одного случая',
+    'casesDeleteConfirmation' => 'Вы уверены, что хотите удалить этот кейс?',
 
     'bookConsultationFirstParagraph' => 'Ищете инвестиционные возможности? Мы поможем сделать первый шаг.',
     'bookConsultationSecondParagraph' => 'Наша команда готова ответить на все ваши вопросы – от консультации до покупки и управления.',

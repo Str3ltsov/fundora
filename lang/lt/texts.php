@@ -38,6 +38,7 @@ return [
     'casesDescription' => '',
     'casesChooseCountry' => 'Pasirinkite šalį',
     'casesEmpty' => 'Atvejų nerasta.',
+    'casesDeleteConfirmation' => 'Ar tikrai norite ištrinti šią atveją?',
 
     'bookConsultationFirstParagraph' => 'Ieškote investicinių galimybių? Mes padėsime žengti pirmą žingsnį.',
     'bookConsultationSecondParagraph' => 'Mūsų komanda pasiruošusi atsakyti į visus Jūsų klausimus – nuo pirmos konsultacijos iki NT įsigijimo ar valdymo sprendimų.',

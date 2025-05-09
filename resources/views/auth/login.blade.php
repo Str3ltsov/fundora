@@ -39,7 +39,7 @@
                         <div class="block mt-4">
                             <label for="remember_me" class="inline-flex items-center">
                                 <input id="remember_me" type="checkbox"
-                                    class="dark:bg-gray-700 border-0 dark:border-0 text-white focus:ring-0 dark:focus:ring-0 size-5"
+                                    class="dark:bg-gray-700 border-0 dark:border-0 focus:ring-0 dark:focus:ring-0 size-5"
                                     name="remember">
                                 <span class="ms-3 text-md font-medium text-white">
                                     {{ __('forms.rememberMe') }}

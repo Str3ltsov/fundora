@@ -22,6 +22,11 @@
                         {{ __('pages.pages') }}
                     </x-nav-link>
                 </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="route('cases.index')" :active="request()->routeIs('cases.index')">
+                        {{ __('pages.cases') }}
+                    </x-nav-link>
+                </div>
             </div>
 
             <!-- Settings Dropdown -->
@@ -139,6 +144,11 @@
         <div class="pt-2 pb-3 space-y-1">
             <x-responsive-nav-link :href="route('pages.index')" :active="request()->routeIs('pages.index')">
                 {{ __('pages.pages') }}
+            </x-responsive-nav-link>
+        </div>
+        <div class="pt-2 pb-3 space-y-1">
+            <x-responsive-nav-link :href="route('cases.index')" :active="request()->routeIs('cases.index')">
+                {{ __('pages.cases') }}
             </x-responsive-nav-link>
         </div>
 

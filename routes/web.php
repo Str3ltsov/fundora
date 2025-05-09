@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Admin\ProfileController;
 use App\Http\Controllers\AboutUsController;
+use App\Http\Controllers\Admin\CaseController;
 use App\Http\Controllers\Admin\PageController;
 use App\Http\Controllers\BookConsultationController;
 use App\Http\Controllers\CasesController;
@@ -30,6 +31,7 @@ Route::prefix('admin')->group(function () {
             ->name('dashboard');
         Route::resource('pages', PageController::class)
             ->only(['index', 'edit', 'update']);
+        Route::resource('cases', CaseController::class)->except(['show']);
     });
 
     Route::middleware('auth')->group(function () {

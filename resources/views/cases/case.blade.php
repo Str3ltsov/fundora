@@ -1,5 +1,5 @@
-<div class="case flex md:flex-row flex-col gap-10 p-10 bg-primary-color w-110 md:w-auto">
-    <img src="{{ asset("images/products/$case->image") }}" alt="{{ $case->name }}"
+<div class="case flex md:flex-row flex-col gap-10 p-10 bg-primary-color w-110 md:w-full">
+    <img src="{{ asset("images/cases/$case->image") }}" alt="{{ $case->name }}"
         class="w-100 h-100 md:h-auto object-cover">
     <div class="flex flex-col justify-between gap-10">
         <div class="flex flex-col gap-6">

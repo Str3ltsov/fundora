@@ -22,8 +22,8 @@
 
     <!-- Styles / Scripts -->
     @if (config('app.env') == 'production' && is_file('build/manifest.json'))
-        <link href="{{ asset('build/assets/app-fBPLLfYq.css') }}" rel="stylesheet">
-        <script src="{{ asset('build/assets/app-eMHK6VFw.js') }}"></script>
+        <link href="{{ asset('build/assets/app-pZwxIOIk.css') }}" rel="stylesheet">
+        <script src="{{ asset('build/assets/app-Bf4POITK.js') }}"></script>
     @else
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     @endif

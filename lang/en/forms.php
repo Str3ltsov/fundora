@@ -12,12 +12,21 @@ return [
     'logout' => 'Logout',
     'title' => 'Title',
     'description' => 'Description',
+    'country' => 'Country',
+    'address' => 'Address',
+    'price' => 'Price',
+    'mainAdvantages' => 'Main Advantages',
+    'visibility' => 'Visibility',
     'createdAt' => 'Created At',
     'updatedAt' => 'Updated At',
     'actions' => 'Actions',
+    'create' => 'Create',
     'view' => 'View',
     'edit' => 'Edit',
+    'delete' => 'Delete',
     'save' => 'Save',
-    'cancel' => 'Cancel'
+    'cancel' => 'Cancel',
+    'uploadImage' => 'Upload Image',
+    'uploadDescription' => 'PNG or JPG'
 
 ];

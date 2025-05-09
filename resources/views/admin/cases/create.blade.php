@@ -2,13 +2,11 @@
     <x-slot name="header">
         <h2
             class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight flex flex-wrap items-center gap-3">
-            <a href="{{ route('pages.index') }}" class="hover:dark:text-gray-300 hover:text-gray-700">
-                {{ __('pages.pages') }}
+            <a href="{{ route('cases.index') }}" class="hover:dark:text-gray-300 hover:text-gray-700">
+                {{ __('pages.cases') }}
             </a>
             <x-heroicon-o-arrow-right class="size-4" />
-            <span class="text-gray-600 dark:text-gray-400">{{ __('forms.edit') }}</span>
-            <x-heroicon-o-arrow-right class="size-4" />
-            <span class="text-gray-600 dark:text-gray-400">{{ $page->name }}</span>
+            <span class="text-gray-600 dark:text-gray-400">{{ __('forms.create') }}</span>
         </h2>
     </x-slot>
 
@@ -16,7 +14,7 @@
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 space-y-6">
             @include('layouts.partials.session_messages')
             <div class="p-4 sm:p-8 bg-white dark:bg-gray-800 shadow rounded-0">
-                @include('admin.pages.partials.update_form')
+                @include('admin.cases.partials.store_form')
             </div>
         </div>
     </div>
@@ -24,7 +22,7 @@
 
 <style>
     .ck-editor__editable_inline {
-        min-height: 10vh;
+        min-height: 4.5vh;
     }
 
     .ck.ck-editor__main>.ck-editor__editable {
@@ -37,10 +35,16 @@
 <script>
     const initClassicEdit = () => {
         const descriptions = document.querySelectorAll('#description_editor')
+        const mainAdvantages = document.querySelectorAll('#main_advantages_editor')
 
         descriptions.forEach((description) => {
             ClassicEditor
                 .create(description, {})
+                .catch(error => console.error(error));
+        })
+        mainAdvantages.forEach((mainAdvantage) => {
+            ClassicEditor
+                .create(mainAdvantage, {})
                 .catch(error => console.error(error));
         })
     }

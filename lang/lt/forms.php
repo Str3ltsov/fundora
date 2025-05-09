@@ -12,12 +12,21 @@ return [
     'logout' => 'Atsijungti',
     'title' => 'Pavadinimas',
     'description' => 'Aprašymas',
+    'country' => 'Šalis',
+    'address' => 'Adresas',
+    'price' => 'Kaina',
+    'mainAdvantages' => 'Pagrindiniai privalumai',
+    'visibility' => 'Matomumas',
     'createdAt' => 'Sukurta',
     'updatedAt' => 'Atnaujinta',
     'actions' => 'Veiksmai',
+    'create' => 'Sukurti',
     'view' => 'Peržiūrėti',
     'edit' => 'Redaguoti',
+    'delete' => 'Ištrinti',
     'save' => 'Išsaugoti',
-    'cancel' => 'Atšaukti'
+    'cancel' => 'Atšaukti',
+    'uploadImage' => 'Įkelti paveikslėlį',
+    'uploadDescription' => 'PNG arba JPG'
 
 ];
