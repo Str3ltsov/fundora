@@ -18,7 +18,7 @@
             </div>
         </section>
         <section class="why-fundora bg-primary-color">
-            <div class="text-white max-w-screen-lg mx-auto px-5 py-13">
+            <div class="text-white max-w-screen-lg  mx-auto px-5 py-13">
                 <h2 class="text-2xl font-medium pb-10">{{ __('home.whyFundoraTitle') }}</h2>
                 <div class="flex sm:flex-row flex-col items-center justify-between text-center gap-10">
                     <div class="card flex flex-col items-center gap-2 max-w-60">
@@ -40,7 +40,7 @@
             </div>
         </section>
         <section class="cta bg-secondary-color">
-            <div class="text-white max-w-screen-lg mx-auto px-5 py-15 flex flex-col gap-5">
+            <div class="text-white max-w-screen-lg  mx-auto px-5 py-15 flex flex-col gap-5">
                 <h2 class="font-medium text-3xl">{{ __('home.readyToInvestGloballyTitle') }}</h2>
                 <p class="max-w-100">
                     {{ __('home.readyToInvestGloballyDesc') }}

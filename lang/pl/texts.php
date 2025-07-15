@@ -34,6 +34,8 @@ return [
     'faqSeventhTitle' => '7. Czy oferujecie nieruchomości tylko dużym inwestorom?',
     'faqSeventhDescription' => 'Nie – w naszej ofercie są zarówno projekty dla dużych funduszy, jak i ciekawe możliwości dla inwestorów indywidualnych.',
 
+    'privacyPolicyTitle' => 'Polityka prywatności',
+
     'casesTitle' => 'Sprawy',
     'casesDescription' => '',
     'casesChooseCountry' => 'Wybierz kraj',

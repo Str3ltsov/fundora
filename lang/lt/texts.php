@@ -34,6 +34,8 @@ return [
     'faqSeventhTitle' => '7. Ar siūlote NT tik dideliems investuotojams?',
     'faqSeventhDescription' => 'Ne – mūsų portfelyje yra tiek aukštos klasės projektų dideliems fondams, tiek patrauklių galimybių privatiems investuotojams.',
 
+    'privacyPolicyTitle' => 'Privatumo politika',
+
     'casesTitle' => 'Atvejai',
     'casesDescription' => '',
     'casesChooseCountry' => 'Pasirinkite šalį',

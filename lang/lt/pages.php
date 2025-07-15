@@ -6,6 +6,7 @@ return [
     'aboutUs' => 'Apie mus',
     'services' => 'Paslaugos',
     'faq' => 'DUK',
+    'privacyPolicy' => 'Privatumo politika',
     'cases' => 'Atvejai',
     'bookConsultation' => 'Užsisakyti Konsultaciją',
     'login' => 'Prisijungti kaip Adminas',

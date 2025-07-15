@@ -6,6 +6,7 @@ return [
     'aboutUs' => 'O nas',
     'services' => 'Usługi',
     'faq' => 'FAQ',
+    'privacyPolicy' => 'Polityka prywatności',
     'cases' => 'Przypadki',
     'bookConsultation' => 'Zarezerwuj konsultację',
     'login' => 'Zaloguj się jako Admin',

@@ -22,7 +22,7 @@
 
     <!-- Styles / Scripts -->
     @if (config('app.env') == 'production' && is_file('build/manifest.json'))
-        <link href="{{ asset('build/assets/app-C0aUFJx3.css') }}" rel="stylesheet">
+        <link href="{{ asset('build/assets/app-DUHr-iMV.css') }}" rel="stylesheet">
     @else
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     @endif
@@ -40,7 +40,7 @@
     @include('layouts.partials.footer')
 
     @if (config('app.env') == 'production' && is_file('build/manifest.json'))
-        <script src="{{ asset('build/assets/app-Bf4POITK.js') }}"></script>
+        <script src="{{ asset('build/assets/app-DaBYqt0m.js') }}"></script>
     @endif
 
     @stack('scripts')

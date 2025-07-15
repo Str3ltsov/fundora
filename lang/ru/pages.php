@@ -6,6 +6,7 @@ return [
     'aboutUs' => 'О нас',
     'services' => 'Услуги',
     'faq' => 'FAQ',
+    'privacyPolicy' => 'Политика конфиденциальности',
     'cases' => 'Случаи',
     'bookConsultation' => 'Записаться на консультацию',
     'login' => 'Войти как Aдмин',

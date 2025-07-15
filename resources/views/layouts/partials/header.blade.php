@@ -1,5 +1,5 @@
 <nav class="bg-header-color fixed top-0 min-w-full shadow-md z-1">
-    <div class="mx-auto max-w-screen-lg px-5">
+    <div class="mx-auto max-w-screen-lg  px-5">
         <div class="relative flex h-20 items-center justify-between">
             <div class="absolute inset-y-0 left-0 flex items-center md:hidden">
                 <button type="button"
@@ -44,6 +44,10 @@
                             class="@if (request()->is('faq')) underline @endif flex items-center px-4 py-3 text-md font-medium text-white hover:bg-primary-color">
                             {{ __('pages.faq') }}
                         </a>
+                        {{-- <a href="{{ route('privacyPolicy') }}"
+                            class="@if (request()->is('privacy-policy')) underline @endif flex items-center px-4 py-3 text-md font-medium text-white hover:bg-primary-color">
+                            {{ __('pages.privacyPolicy') }}
+                        </a> --}}
                         <a href="{{ route('cases') }}"
                             class="@if (request()->is('cases')) underline @endif flex items-center px-4 py-3 text-md font-medium text-white hover:bg-primary-color">
                             {{ __('pages.cases') }}
@@ -89,6 +93,10 @@
                 class="block @if (request()->is('faq')) underline @endif px-3 py-2 text-base font-medium text-white hover:bg-primary-color">
                 {{ __('pages.faq') }}
             </a>
+            {{-- <a href="{{ route('privacyPolicy') }}"
+                class="block @if (request()->is('privacy-policy')) underline @endif px-3 py-2 text-base font-medium text-white hover:bg-primary-color">
+                {{ __('pages.privacyPolicy') }}
+            </a> --}}
             <a href="{{ route('cases') }}"
                 class="block @if (request()->is('cases')) underline @endif px-3 py-2 text-base font-medium text-white hover:bg-primary-color">
                 {{ __('pages.cases') }}

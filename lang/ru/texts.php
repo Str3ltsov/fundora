@@ -34,6 +34,8 @@ return [
     'faqSeventhTitle' => '7. Вы работаете только с крупными инвесторами?',
     'faqSeventhDescription' => 'Нет. У нас есть как крупные инвестиционные проекты, так и доступные варианты для частных инвесторов.',
 
+    'privacyPolicyTitle' => 'Политика конфиденциальности',
+
     'casesTitle' => 'Кейсы',
     'casesDescription' => '',
     'casesChooseCountry' => 'Выберите страну',

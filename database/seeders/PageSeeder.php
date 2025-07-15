@@ -21,6 +21,10 @@ class PageSeeder extends Seeder
         [
             'uri' => 'faq',
             'alias' => 'faq'
+        ],
+        [
+            'uri' => 'privacy-policy',
+            'alias' => 'privacyPolicy'
         ]
     ];
 
@@ -29,48 +33,57 @@ class PageSeeder extends Seeder
             'names' => [
                 'About us',
                 'Services',
-                'FAQ'
+                'FAQ',
+                'Privacy policy'
             ],
             'titles' => [
                 'Fundora – Global Real Estate Opportunities',
                 'Our Services',
-                'FAQ'
+                'FAQ',
+                'Privacy policy'
             ]
         ],
         'lt' => [
             'names' => [
                 'Apie mus',
                 'Paslaugos',
-                'DUK'
+                'DUK',
+                'Privatumo politika'
             ],
             'titles' => [
                 'Fundora – Global Real Estate Opportunities',
                 'Paslaugos',
-                'Dažnai užduodami klausimai'
+                'Dažnai užduodami klausimai',
+                'Privatumo politika'
             ]
         ],
         'ru' => [
             'names' => [
                 'О нас',
                 'Услуги',
-                'FAQ'
+                'FAQ',
+                'Политика конфиденциальности'
             ],
             'titles' => [
                 'Fundora – Global Real Estate Opportunities',
                 'Наши услуги',
-                'Часто задаваемые вопросы'
+                'Часто задаваемые вопросы',
+                'Политика конфиденциальности'
             ]
         ],
         'pl' => [
             'names' => [
                 'O nas',
                 'Usługi',
-                'FAQ'
+                'FAQ',
+                'Polityka prywatności'
+
             ],
             'titles' => [
                 'Fundora – Global Real Estate Opportunities',
                 'Usługi',
-                'Często zadawane pytania'
+                'Często zadawane pytania',
+                'Polityka prywatności'
             ]
         ]
     ];

@@ -9,6 +9,7 @@ use App\Http\Controllers\CasesController;
 use App\Http\Controllers\FAQController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LanguageController;
+use App\Http\Controllers\PrivacyPolicyController;
 use App\Http\Controllers\ServicesController;
 use Illuminate\Support\Facades\Route;
 
@@ -20,6 +21,7 @@ Route::get("/home", fn() => redirect(route("home")));
 Route::get("/about-us", [AboutUsController::class, "index"])->name("aboutUs");
 Route::get("/services", [ServicesController::class, "index"])->name("services");
 Route::get("/faq", [FAQController::class, "index"])->name("faq");
+Route::get("/privacy-policy", [PrivacyPolicyController::class, "index"])->name("privacyPolicy");
 Route::get("/cases", [CasesController::class, "index"])->name("cases");
 Route::resource("book-consultation", BookConsultationController::class)
     ->only(["index", "store"]);
